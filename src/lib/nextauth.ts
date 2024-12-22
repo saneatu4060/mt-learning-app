@@ -1,5 +1,5 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { type GetServerSidePropsContext } from "next";
+// import { type GetServerSidePropsContext } from "next";
 import {
     getServerSession,
     type NextAuthOptions,
@@ -58,7 +58,6 @@ export const authOptions: NextAuthOptions = {
         }),
     ],
 };
-
 export const getAuthSession = () => {
     return getServerSession(authOptions);
 };
