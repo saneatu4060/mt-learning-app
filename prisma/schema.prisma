@@ -47,3 +47,38 @@ model User {
   accounts      Account[]
   sessions      Session[]
 }
+
+model Question {
+  id           Int      @id @default(autoincrement()) // 問題ID (プライマリキー)
+  category     String // 問題カテゴリ
+  questionText String // 問題文
+  choices      Choice[] // 選択肢 (別のモデルで定義されるChoiceとの1対多リレーション)
+  answer       Answer[] // 外部キーによるBテーブル (Answer) とのリレーション
+
+  // 自動生成されるフィールド
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Choice {
+  id         Int      @id @default(autoincrement()) // 選択肢のID
+  text       String // 選択肢のテキスト
+  questionId Int // Questionテーブルとのリレーション
+  question   Question @relation(fields: [questionId], references: [id])
+
+  // 自動生成されるフィールド
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Answer {
+  id        Int      @id @default(autoincrement()) // 答えのID
+  problemId Int // 問題ID (Questionテーブルとのリレーション)
+  question  Question @relation(fields: [problemId], references: [id]) // Aテーブル(Question)への外部キー
+  imageUrl  String? // 図のURL (任意)
+  answers   String[] // 答え (複数正解を配列で保持)
+
+  // 自動生成されるフィールド
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

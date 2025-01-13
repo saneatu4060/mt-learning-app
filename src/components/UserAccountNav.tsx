@@ -1,7 +1,7 @@
 "use client";
 
 import type { User } from "next-auth"
-import React from "react"
+import React, { useState } from "react"
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -10,15 +10,16 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import UserAvatar from "./UserAvatar"
-import Link from "next/link"
 import { signOut } from "next-auth/react"
-import { LogOut } from "lucide-react"
+import { LoaderCircle, LogOut } from "lucide-react"
+
 
 type Props = {
     user: Pick<User, "name" | "image" | "email">
 };
 
 const UserAccountNav = ({ user }: Props) => {
+    const [isSignOutlodiong, setisSignOutlodiong] = useState<boolean>(false)
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>
@@ -41,22 +42,19 @@ const UserAccountNav = ({ user }: Props) => {
                         )}
                     </div>
                 </div>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                    <Link href="/">設定</Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuSeparator />
 
                 <DropdownMenuItem
                     onSelect={(event) => {
                         event.preventDefault();
+                        setisSignOutlodiong(true)
                         signOut().catch(console.error);
+
                     }}
                     className="text-red-600 cursor-pointer"
                 >
                     ログアウト
-                    <LogOut className="w-4 h-4 ml-2 " />
+                    {isSignOutlodiong ? (<LoaderCircle className="mr-2 animate-spin" />) : (<LogOut className="w-4 h-4 ml-2 " />)}
+
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
