@@ -2,10 +2,9 @@ import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 
 
-export default async function Category() {
+export default function Category() {
 
     return (
-
 
         <div className="max-w-4xl mx-auto p-8">
             <h1 className="text-2xl font-bold mb-4 text-gray-800">演習テストリスト</h1>
