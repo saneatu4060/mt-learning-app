@@ -1,4 +1,4 @@
-import { Clock, BookOpen, Trophy } from 'lucide-react'
+import { BookOpen, Trophy } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
