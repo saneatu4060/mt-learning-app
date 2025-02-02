@@ -10,9 +10,8 @@ import { questiondata } from "@/data/question"
 
 export default function Quiz() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-    // const router = useRouter()
     const params = useParams()  // useParamsでparamsを取得
-    const { categoryId, mode } = params  // paramsからcategoryIdとmodeを取得
+    const { categoryId } = params  // paramsからcategoryIdとmodeを取得
     const searchParams = useSearchParams();
     const categoryName = searchParams.get("name") || "カテゴリ名不明";
     const categoryIdNumber = parseInt(categoryId, 10);  // categoryIdを数値に変換
