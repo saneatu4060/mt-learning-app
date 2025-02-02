@@ -14,7 +14,7 @@ export default function Quiz() {
     const { categoryId } = params  // paramsからcategoryIdとmodeを取得
     const searchParams = useSearchParams();
     const categoryName = searchParams.get("name") || "カテゴリ名不明";
-    const categoryIdNumber = parseInt(categoryId, 10);  // categoryIdを数値に変換
+    const categoryIdNumber = parseInt(Array.isArray(categoryId) ? categoryId[0] : categoryId || "0", 10);  // categoryIdを数値に変換
     const questions = questiondata[categoryIdNumber] || [];
     const currentQuestion = questions[currentQuestionIndex];
     const isFirstQuestion = currentQuestionIndex === 0;
