@@ -34,12 +34,11 @@ export default function RootLayout({
               <Providers>
                 <Navbar />
               </Providers>
-
             </div>
           </header>
 
           {/* メインコンテンツ */}
-          <main className="flex items-center justify-center z-10 min-h-[calc(100vh-200px)]  bg-white/50 rounded-xl py-7 px-8 m-6 overflow-hidden">
+          <main className="flex items-center justify-center z-10 min-h-[calc(100vh-200px)]  bg-white/50 rounded-xl py-3 px-6 m-6 overflow-hidden">
             {children}
           </main>
 

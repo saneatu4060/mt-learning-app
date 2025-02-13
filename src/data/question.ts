@@ -1,4 +1,4 @@
-export const questiondata: { [key: number]: { id: number, text: string, options: string[], correctAnswers: number[], multipleAnswers: boolean }[] } = {
+export const questiondata: { [key: number]: { id: number, text: string, options: string[], correctAnswers: number[], multipleAnswers: boolean, isImageUrl: string }[] } = {
     1: [
         {
             "id": 1,
@@ -13,7 +13,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 2,
@@ -29,7 +30,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 3,
@@ -44,7 +46,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 4,
@@ -59,11 +62,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 5,
-            "text": "60 歳の女性の方が 20 歳の女性よりも高値を示すのはどれか。",
+            "text": "60歳の女性の方が20歳の女性よりも高値を示すのはどれか。",
             "options": [
                 "カルシトニン",
                 "プロラクチン<PRL>",
@@ -74,11 +78,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 6,
-            "text": "尿沈渣の Sternheimer 染色標本(別冊No. 1)を別に示す。 認められるのはどれか。",
+            "text": `尿沈渣の Sternheimer 染色標本(別冊No.1)を別に示す。\n認められるのはどれか。`,
             "options": [
                 "顆粒円柱",
                 "脂肪円柱",
@@ -89,7 +94,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-000.png"
         },
         {
             "id": 7,
@@ -104,7 +110,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 8,
@@ -119,11 +126,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 9,
-            "text": "心窩部の激痛を訴える患者の上部消化管内視鏡検査で虫体を確認した。虫体の写 真(別冊No. 22)を別に示す。この寄生虫はどれか。",
+            "text": "心窩部の激痛を訴える患者の上部消化管内視鏡検査で虫体を確認した。虫体の写真(別冊No.2)を別に示す。\nこの寄生虫はどれか。",
             "options": [
                 "回 虫",
                 "旋毛虫",
@@ -134,7 +142,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-001.png"
         },
         {
             "id": 10,
@@ -149,7 +158,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 11,
@@ -164,7 +174,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 12,
@@ -179,7 +190,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 13,
@@ -194,7 +206,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 14,
@@ -209,7 +222,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 15,
@@ -224,7 +238,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 16,
@@ -240,7 +255,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 2
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 17,
@@ -256,11 +272,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 2,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 18,
-            "text": "心電図(別冊No. 32)を別に示す。平均電気軸で最も近いのはどれか。",
+            "text": "心電図(別冊No.3)を別に示す。\n平均電気軸で最も近いのはどれか。",
             "options": [
                 "-30 度",
                 "0度",
@@ -271,7 +288,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-002.png"
         },
         {
             "id": 19,
@@ -287,7 +305,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 20,
@@ -302,7 +321,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 21,
@@ -318,7 +338,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 22,
@@ -333,7 +354,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 23,
@@ -348,11 +370,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 24,
-            "text": "14 Hz の連続する波を認める脳波(別冊No. 42)を別に示す。所見として正しいのはどれか。",
+            "text": "14Hzの連続する波を認める脳波(別冊No.4)を別に示す。\n所見として正しいのはどれか。",
             "options": [
                 "呼びかけると返事をする。",
                 "薬剤の影響による速波である。",
@@ -363,11 +386,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-003.png"
         },
         {
             "id": 25,
-            "text": "大脳誘発電位を図に示す。考えられるのはどれか。（図なし）",
+            "text": "大脳誘発電位を図に示す。\n考えられるのはどれか。",
             "options": [
                 "視覚誘発電位",
                 "事象関連電位",
@@ -378,7 +402,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-100.png"
         },
         {
             "id": 26,
@@ -393,7 +418,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 27,
@@ -408,11 +434,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 28,
-            "text": " 左腎の超音波縦断面像(別冊No. 5)を別に示す。矢印で示す病変の超音波所見で正しいのはどれか",
+            "text": " 左腎の超音波縦断面像(別冊No.5)を別に示す。\n矢印で示す病変の超音波所見で正しいのはどれか",
             "options": [
                 "形状は不整である。",
                 "境界は明瞭である。",
@@ -423,7 +450,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-004.png"
         },
         {
             "id": 29,
@@ -439,7 +467,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 2
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 30,
@@ -454,7 +483,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 31,
@@ -469,7 +499,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 32,
@@ -484,7 +515,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 33,
@@ -499,7 +531,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 34,
@@ -514,11 +547,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 35,
-            "text": "室温下で血清を静置した。LCAT によって生じる変化はどれか。",
+            "text": "室温下で血清を静置した。\nLCAT によって生じる変化はどれか。",
             "options": [
                 "中性脂肪の減少",
                 "遊離脂肪酸の減少",
@@ -529,7 +563,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 36,
@@ -544,7 +579,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 37,
@@ -559,7 +595,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 38,
@@ -574,7 +611,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 39,
@@ -589,7 +627,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 40,
@@ -605,7 +644,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 41,
@@ -620,7 +660,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 42,
@@ -636,11 +677,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 43,
-            "text": "ICG 残存率の\u0005分、10 分、15 分値をプロットした図を示す。ICG 消失率として最も近いのはどれか。ただし、消失率は 0.693 を半減時間0分2で除した値とする。",
+            "text": "ICG 残存率の5分、10 分、15 分値をプロットした図を示す。\nICG 消失率として最も近いのはどれか。\nただし、消失率は 0.693 を半減時間0分2で除した値とする。",
             "options": [
                 "0.051",
                 "0.180",
@@ -651,7 +693,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-101.png"
         },
         {
             "id": 44,
@@ -667,11 +710,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 45,
-            "text": "H-E 染色標本(別冊No. 62)を別に示す。この臓器はどれか。",
+            "text": "H-E 染色標本(別冊No.6)を別に示す。\nこの臓器はどれか。",
             "options": [
                 "気 管",
                 "食 道",
@@ -682,7 +726,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-005.png"
         },
         {
             "id": 46,
@@ -697,7 +742,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 47,
@@ -712,7 +758,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 48,
@@ -727,7 +774,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 49,
@@ -743,7 +791,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 3,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 50,
@@ -759,7 +808,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 2,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 51,
@@ -775,11 +825,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 1
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 52,
-            "text": "特殊染色標本(別冊No. 72)を別に示す。染色法はどれか。",
+            "text": "特殊染色標本(別冊No.7)を別に示す。\n染色法はどれか。",
             "options": [
                 "azan 染色",
                 "elastica van Gieson 染色",
@@ -790,7 +841,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-006.png"
         },
         {
             "id": 53,
@@ -805,11 +857,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 54,
-            "text": "肺のホルマリン固定後の肉眼像(別冊No. 8Ａ)とH-E染色標本(別冊No. 8Ｂ)とを別に示す。病原体の検出に有効な染色はどれか。",
+            "text": "肺のホルマリン固定後の肉眼像(別冊No.8Ａ)とH-E染色標本(別冊No.8Ｂ)とを別に示す。病原体の検出に有効な染色はどれか。",
             "options": [
                 "Gram染色",
                 "mucicarmine 染色",
@@ -820,7 +873,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-007.png"
         },
         {
             "id": 55,
@@ -835,7 +889,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 56,
@@ -850,11 +905,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 57,
-            "text": "胸水細胞診の Papanicolaou 染色標本(別冊No. 9Ａ2)と Giemsa 染色標本(別冊No.9Ｂ2)とを別に示す。矢印で示すのはどれか。",
+            "text": "胸水細胞診の Papanicolaou 染色標本(別冊No.9Ａ)と Giemsa 染色標本(別冊No.9Ｂ)とを別に示す。\n矢印で示すのはどれか。",
             "options": [
                 "組織球",
                 "腺癌細胞",
@@ -865,7 +921,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-008.png"
         },
         {
             "id": 58,
@@ -880,7 +937,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 59,
@@ -895,7 +953,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 60,
@@ -910,7 +969,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 61,
@@ -925,7 +985,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 62,
@@ -941,7 +1002,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 3,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 63,
@@ -957,7 +1019,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 2
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 64,
@@ -972,7 +1035,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 65,
@@ -988,11 +1052,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 2
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 66,
-            "text": "次の文により 66、67 の問いに答えよ。34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5 g/dl、血小板 1.1 万/μl、血清FDP 42 μg/ml、血漿フィブリノゲン 95 mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No. 102)を別に示す。考えられるのはどれか。",
+            "text": "次の文により 66、67 の問いに答えよ。\n34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5 g/dl、血小板 1.1 万/μl、血清FDP 42 μg/ml、血漿フィブリノゲン 95 mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No.10)を別に示す。\n\n考えられるのはどれか。",
             "options": [
                 "再生不良性貧血",
                 "巨赤芽球性貧血",
@@ -1003,11 +1068,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-009.png"
         },
         {
             "id": 67,
-            "text": "この患者で予想される遺伝子異常はどれか。",
+            "text": "34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5 g/dl、血小板 1.1 万/μl、血清FDP 42 μg/ml、血漿フィブリノゲン 95 mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No.10)を別に示す。\n\nこの患者で予想される遺伝子異常はどれか。",
             "options": [
                 "AML1/ETO",
                 "BCR/ABL",
@@ -1018,7 +1084,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-009.png"
         },
         {
             "id": 68,
@@ -1034,7 +1101,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 69,
@@ -1049,7 +1117,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 70,
@@ -1064,7 +1133,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 71,
@@ -1080,7 +1150,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 72,
@@ -1095,11 +1166,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 73,
-            "text": "85 歳の男性。肺の空洞性病変を認めたため気管支鏡検査を行った。生検組織のPAS 染色標本(別冊No. 112)を別に示す。原因菌として考えられるのはどれか。",
+            "text": "85 歳の男性。肺の空洞性病変を認めたため気管支鏡検査を行った。生検組織のPAS 染色標本(別冊No.11)を別に示す。\n原因菌として考えられるのはどれか。",
             "options": [
                 "Aspergillus spp.",
                 "Cryptococcus spp.",
@@ -1110,7 +1182,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-010.png"
         },
         {
             "id": 74,
@@ -1125,7 +1198,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 75,
@@ -1140,7 +1214,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 76,
@@ -1156,7 +1231,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 2,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 77,
@@ -1171,7 +1247,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 78,
@@ -1186,7 +1263,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 79,
@@ -1202,7 +1280,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 2
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 80,
@@ -1218,7 +1297,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 0,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 81,
@@ -1233,7 +1313,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 82,
@@ -1248,7 +1329,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 83,
@@ -1263,7 +1345,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 84,
@@ -1279,11 +1362,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 85,
-            "text": "HEp-2 細胞を核材に用いた蛍光抗体法による抗核抗体の染色パターン(別冊No.122)を別に示す。この所見はどれか。",
+            "text": "HEp-2 細胞を核材に用いた蛍光抗体法による抗核抗体の染色パターン(別冊No.12)を別に示す。\nこの所見はどれか。",
             "options": [
                 "斑紋<speckled>型",
                 "辺縁<peripheral>型",
@@ -1294,11 +1378,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-011.png"
         },
         {
             "id": 86,
-            "text": "次の文により 86、87 の問いに答えよ。58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0 g/dl、IgG 400 mg/dl0基準870〜1,7002、IgA 10 mg/dl0基準 110〜4102、IgM5mg/dl0基準 35〜2202。尿蛋白は試験紙法、色素法 300 mg/dl0基準 20 以下。この患者の検査所見として考えられるのはどれか。",
+            "text": "次の文により 86、87 の問いに答えよ。\n58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0 g/dl、IgG 400 mg/dl0基準870〜1,7002、IgA 10 mg/dl0基準 110〜4102、IgM5mg/dl0基準 35〜2202。尿蛋白は試験紙法、色素法 300 mg/dl0基準 20 以下。\n\nこの患者の検査所見として考えられるのはどれか。",
             "options": [
                 "血清 C3 高値",
                 "血清クリオグロブリン陽性",
@@ -1309,11 +1394,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 87,
-            "text": "考えられるのはどれか。",
+            "text": "58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0 g/dl、IgG 400 mg/dl0基準870〜1,7002、IgA 10 mg/dl0基準 110〜4102、IgM5mg/dl0基準 35〜2202。尿蛋白は試験紙法、色素法 300 mg/dl0基準 20 以下。\n\n考えられるのはどれか。",
             "options": [
                 "多発性骨髄腫",
                 "ネフローゼ症候群",
@@ -1324,7 +1410,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 88,
@@ -1340,7 +1427,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 2,
                 3
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 89,
@@ -1356,7 +1444,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 1,
                 4
             ],
-            "multipleAnswers": true
+            "multipleAnswers": true,
+            "isImageUrl": ""
         },
         {
             "id": 90,
@@ -1371,7 +1460,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 91,
@@ -1386,7 +1476,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 0
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 92,
@@ -1401,7 +1492,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 93,
@@ -1416,7 +1508,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 94,
@@ -1431,7 +1524,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 95,
@@ -1446,22 +1540,24 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 96,
             "text": "信号波を示す。パルス振幅変調<PAM>はどれか。",
             "options": [
-                "",
-                "",
-                "",
-                "",
-                ""
+                "/am58/am-image-103.png",
+                "/am58/am-image-104.png",
+                "/am58/am-image-105.png",
+                "/am58/am-image-106.png",
+                "/am58/am-image-107.png"
             ],
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": "/am58/am-image-102.png"
         },
         {
             "id": 97,
@@ -1476,7 +1572,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 2
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 98,
@@ -1491,7 +1588,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 3
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 99,
@@ -1502,16 +1600,12 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
                 "リアルタイム処理",
                 "オンライン処理",
                 "バッチ処理",
-                "高温多湿の場所に保管する。",
-                "気流の生じない場所で使用する。",
-                "振動のない水平な台に設置する。",
-                "認識できる最小の質量を秤量と呼ぶ。",
-                "安全で正確に測定できる最大質量を感量と呼ぶ。"
             ],
             "correctAnswers": [
                 4
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         },
         {
             "id": 100,
@@ -1526,7 +1620,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "correctAnswers": [
                 1
             ],
-            "multipleAnswers": false
+            "multipleAnswers": false,
+            "isImageUrl": ""
         }
     ],
     2: [
@@ -1536,6 +1631,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             options: ["憂鬱", "憂欝", "幽鬱", "幽欝"],
             correctAnswers: [0],
             multipleAnswers: false,
+            isImageUrl: ""
         },
         {
             id: 2,
@@ -1543,6 +1639,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             options: ["キジ", "ツル", "タカ", "ワシ"],
             correctAnswers: [0],
             multipleAnswers: false,
+            isImageUrl: ""
         },
     ],
     // 他のカテゴリ...
