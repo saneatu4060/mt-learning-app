@@ -14,7 +14,7 @@ const SidebarComponent = ({
 }: SidebarComponentProps) => {
     return (
         <div className="rounded-xl  h-screen overflow-y-auto"> {/* スクロール可能に設定 */}
-            <ul className="space-y-4">
+            <ul className="space-y-3">
                 {questions.map((question, index) => (
                     <li key={question.id}>
                         <Link

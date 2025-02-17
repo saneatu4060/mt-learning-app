@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
 
@@ -63,9 +62,9 @@ const QuestionComponent = ({
     }
 
     return (
-        <div >
+        <div>
             <h3 className="text-base font-semibold">{question.id}問目</h3>
-            <h3 className="text text-base font-medium text-gray-600">{question.text}</h3>
+            <h3 className="p-4 text-base font-medium ">{question.text}</h3>
             {question.isImageUrl ? (
                 <>
                     <Image
@@ -77,15 +76,21 @@ const QuestionComponent = ({
                             margin: "auto",
                         }}
                     />
-                    <h3 className="text-center text-sm font-medium text-gray-600">別冊No.1</h3>
+                    <h3 className="p-3 text-center text-sm font-medium ">別冊No.1</h3>
                 </>
             ) : (null)}
             {question.multipleAnswers ? (
                 <div className="space-y-5">
                     {optionsData.map(({ index, option, isCorrect, isSelected, bgColor }) => (
-                        <div
+                        <label
+                            htmlFor={`option-${index}`}
                             key={index}
-                            className={`flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg hover:shadow-xl hover:bg-gradient-to-br from-indigo-100 to-white transition-all focus-within:bg-gradient-to-br focus-within:shadow-xl active:bg-gradient-to-br active:shadow-xl`}
+                            className={`
+                                flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg 
+                                hover:shadow-2xl hover:bg-indigo-50 
+                                focus-within:ring-2 focus-within:ring-indigo-500 
+                                transition-all cursor-pointer  // Make sure the cursor changes
+                            `}
                         >
                             <Checkbox
                                 id={`option-${index}`}
@@ -99,23 +104,29 @@ const QuestionComponent = ({
                                 }}
                                 disabled={showResult}
                             />
-                            <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-gray-700">
+                            <span className="flex-1 text-gray-700">
                                 {option}
-                            </Label>
+                            </span>
                             {showResult && (
                                 <span className={isCorrect ? "text-green-500" : "text-red-500"}>
                                     {isCorrect ? <Check className="w-3 h-3" /> : <X className="w-3 h-3" />}
                                 </span>
                             )}
-                        </div>
+                        </label>
                     ))}
                 </div>
             ) : (
                 <RadioGroup value={userAnswer[0]?.toString()} onValueChange={handleChange} className="space-y-3">
                     {optionsData.map(({ index, option, isCorrect, bgColor }) => (
-                        <div
+                        <label
+                            htmlFor={`option-${index}`}
                             key={index}
-                            className={`flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg hover:shadow-xl hover:bg-gradient-to-br from-indigo-100 to-white transition-all focus-within:bg-gradient-to-br focus-within:shadow-xl active:bg-gradient-to-br active:shadow-xl`}
+                            className={`
+                                        flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg 
+                                        hover:shadow-2xl hover:bg-indigo-50 
+                                        focus-within:ring-2 focus-within:ring-indigo-500 
+                                        transition-all
+                                    `}
                         >
                             <RadioGroupItem
                                 value={index.toString()}
@@ -124,34 +135,27 @@ const QuestionComponent = ({
                                 disabled={showResult}
                             />
                             {checkIfContainsPng(option) ? (
-                                <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-gray-700">
-                                    <Image
-                                        src={option || ""}
-                                        alt="No image"
-                                        width={250}
-                                        height={50}
-                                        style={{
-                                            margin: "auto",
-                                        }}
-                                    />
-                                </Label>
+                                <Image
+                                    src={option || ""}
+                                    alt="No image"
+                                    width={250}
+                                    height={50}
+                                    style={{ margin: "auto" }}
+                                />
                             ) : (
-                                <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer text-gray-700">
-                                    {option}
-                                </Label>
+                                <span className="flex-1 text-gray-700">{option}</span>
                             )}
                             {showResult && (
                                 <span className={isCorrect ? "text-green-500" : "text-red-500"}>
                                     {isCorrect ? <Check className="w-3 h-3" /> : <X className="w-3 h-3" />}
                                 </span>
                             )}
-                        </div>
+                        </label>
                     ))}
                 </RadioGroup>
             )
             }
         </div >
-
     );
 }
 

@@ -57,7 +57,7 @@ const Home = () => {
       <div className="mt-12">
         <h3 className="text-2xl text-center font-semibold mb-4">お知らせ</h3>
         <div className="bg-indigo-50 p-6 rounded-xl shadow-md">
-          <p className="text-gray-700 text-center">サイト更新</p>
+          <p className="text-gray-700 text-center">2025/02/17 デザイン修正</p>
         </div>
       </div>
     </div>
