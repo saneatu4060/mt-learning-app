@@ -13,15 +13,16 @@ const SidebarComponent = ({
     currentQuestionIndex,
 }: SidebarComponentProps) => {
     return (
-        <div className="rounded-xl  h-screen overflow-y-auto"> {/* スクロール可能に設定 */}
-            <ul className="space-y-3">
+        <div className="rounded-xl h-screen h-3/4  overflow-y-auto "
+            style={{ height: "calc(100vh - 170px)" }}>
+            <ul className="space-y-2">
                 {questions.map((question, index) => (
                     <li key={question.id}>
                         <Link
                             href={`#question-${index}`}
-                            className={`block px-4 py-2 rounded-lg text-sm transition-colors ${index === currentQuestionIndex
+                            className={`block px-2 py-2 rounded-lg text-xs transition-colors ${index === currentQuestionIndex
                                 ? "bg-blue-600 text-white"
-                                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                 }`}
                         >
                             <span className="ml-2 flex-shrink-0 line-clamp-2">

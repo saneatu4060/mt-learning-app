@@ -63,15 +63,16 @@ const QuestionComponent = ({
 
     return (
         <div>
-            <h3 className="text-base font-semibold">{question.id}問目</h3>
+            <h3 className="text-xl font-semibold">{question.id}問目</h3>
             <h3 className="p-4 text-base font-medium ">{question.text}</h3>
+
             {question.isImageUrl ? (
                 <>
                     <Image
                         src={question.isImageUrl || ""}
                         alt="No image"
-                        width={450}
-                        height={300}
+                        width={250}
+                        height={200}
                         style={{
                             margin: "auto",
                         }}
@@ -126,6 +127,7 @@ const QuestionComponent = ({
                                         hover:shadow-2xl hover:bg-indigo-50 
                                         focus-within:ring-2 focus-within:ring-indigo-500 
                                         transition-all
+                                        w-full
                                     `}
                         >
                             <RadioGroupItem
