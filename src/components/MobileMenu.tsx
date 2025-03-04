@@ -21,8 +21,8 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
     }
 
     return (
-        <div className="md:hidden z-50 ">
-            <button onClick={toggleMenu} className="p-2 focus:outline-none" aria-label="メニューを開く">
+        <div className="md:hidden ">
+            <button onClick={toggleMenu} className="p-2 z-50 focus:outline-none">
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
@@ -33,7 +33,7 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className=" border-2 border-solid border-gray-100 px-6 py-4 text-gray-800 hover:bg-gray-50"
+                                className=" border-2 border-solid z-50 border-gray-100 px-6 py-4 text-gray-800 hover:bg-gray-50"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}

@@ -11,7 +11,7 @@ const navItems = [
 
 const Navbar = async () => {
     return (
-        <div className="container mx-auto flex h-2 z-50 items-center justify-between ">
+        <div className="container mx-auto flex h-2 items-center justify-between ">
             {/* モバイルメニュー（左側） */}
             <div className="md:hidden">
                 <MobileMenu navItems={navItems} />
@@ -46,11 +46,11 @@ const Navbar = async () => {
             </div>
 
             {/* モバイルログアウトアイコン（右側） */}
-            <div className="md:hidden">
+            {/* <div className="md:hidden">
                 <Link href="/logout" className="p-2">
                     <LogOut />
                 </Link>
-            </div>
+            </div> */}
         </div>
     );
 };

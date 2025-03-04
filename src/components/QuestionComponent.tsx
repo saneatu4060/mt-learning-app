@@ -55,7 +55,7 @@ const QuestionComponent = ({
                 onAnswer([newValue]);
             }
         }
-    };
+    }
 
     function checkIfContainsPng(text: string) {
         return text.includes('.png');
@@ -71,7 +71,7 @@ const QuestionComponent = ({
                     <Image
                         src={question.isImageUrl || ""}
                         alt="No image"
-                        width={250}
+                        width={300}
                         height={200}
                         style={{
                             margin: "auto",
