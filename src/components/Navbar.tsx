@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { MobileMenu } from "./MobileMenu";
-import { LogOut } from "lucide-react";
 
 const navItems = [
     { label: "ホーム", href: "/" },
@@ -44,13 +43,6 @@ const Navbar = async () => {
                     ログイン（未実装）
                 </Link>
             </div>
-
-            {/* モバイルログアウトアイコン（右側） */}
-            {/* <div className="md:hidden">
-                <Link href="/logout" className="p-2">
-                    <LogOut />
-                </Link>
-            </div> */}
         </div>
     );
 };

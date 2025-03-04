@@ -1,5 +1,5 @@
 "use client";
-import { useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { Book, Trophy } from "lucide-react";
 import Link from "next/link";
 import { categorydata } from "@/data/category";
