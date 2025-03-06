@@ -9,17 +9,16 @@ import { QuizDrawer } from "@/components/Drawer"
 
 const Learning = () => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-    const params = useParams()  // useParamsでparamsを取得
-    const { categoryId } = params  // paramsからcategoryIdを取得
-    const pathname = usePathname();
-    const lastPart = pathname.split('/').pop() || "0";
+    const params = useParams()
+    const { categoryId } = params
+    const pathname = usePathname()
+    const lastPart = pathname.split('/').pop() || "0"
     const questions = questiondata[parseInt(lastPart)] || []
-    const currentQuestion = questions[currentQuestionIndex];
-    const isFirstQuestion = currentQuestionIndex === 0;
-    const isLastQuestion = currentQuestionIndex === questions.length - 1;
+    const currentQuestion = questions[currentQuestionIndex]
+    const isFirstQuestion = currentQuestionIndex === 0
+    const isLastQuestion = currentQuestionIndex === questions.length - 1
     const [userAnswers, setUserAnswers] = useState<number[][]>(questions.map(() => []))
     const [showResults, setShowResults] = useState<boolean[]>(questions.map(() => false))
-
 
     const handlePreviousQuestion = () => {
         if (!isFirstQuestion) {
@@ -43,10 +42,13 @@ const Learning = () => {
         }
     }
 
+    const handleQuestionSelect = (index: number) => {
+        setCurrentQuestionIndex(index)
+    }
+
     return (
         <>
-            {/* メインコンテンツの配置 */}
-            <div className="flexed p-4  lg:p-8">
+            <div className="flexed p-4 lg:p-8">
                 <div className="flex justify-between items-center mb-4 sm:mb-6">
                     <Link
                         href={`/exam/${categoryId}`}
@@ -98,8 +100,11 @@ const Learning = () => {
                 </div>
             </div>
 
-            {/* サイドバーを右側に配置 */}
-            <QuizDrawer questions={questions} currentQuestionIndex={currentQuestionIndex} />
+            <QuizDrawer
+                questions={questions}
+                currentQuestionIndex={currentQuestionIndex}
+                onQuestionSelect={handleQuestionSelect}
+            />
         </>
     )
 }

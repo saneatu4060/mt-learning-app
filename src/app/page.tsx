@@ -5,6 +5,7 @@ export const metadata = {
 
 const Home = () => {
   const newsItems = [
+    { date: "2025/03/06", text: "文字を一部太文字、文字化け修正、一覧から問題表示" },
     { date: "2025/03/04", text: "ディレクトリ構成、ページ遷移、デザイン一部修正" },
     { date: "2025/03/02", text: "ヘッダー、一部デザイン修正" },
     { date: "2025/02/17", text: "デザイン修正" },

@@ -18,7 +18,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 2,
-            "text": "毒物及び劇物取締法で劇物に指定されているのはどれか。2つ選べ。",
+            "text": "毒物及び劇物取締法で劇物に指定されているのはどれか。**2つ選べ**。",
             "options": [
                 "水 銀",
                 "塩 酸",
@@ -51,7 +51,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 4,
-            "text": "トレーサビリティ連鎖と校正の階層段階について誤っているのはどれか。",
+            "text": "トレーサビリティ連鎖と校正の階層段階について**誤っている**のはどれか。",
             "options": [
                 "最上位の測定法は一次基準測定操作法である。",
                 "二次校正物質は二次基準測定操作法で値づける。",
@@ -243,11 +243,11 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 16,
-            "text": "心電計の特性で正しいのはどれか。2つ選べ。",
+            "text": "心電計の特性で正しいのはどれか。**2つ選べ**。",
             "options": [
                 "弁別比は 60 dB 未満である。",
                 "接地抵抗線は 0.1 Ω 以下である。",
-                "患者保護回路のヒューズは\u0005mA である。",
+                "患者保護回路のヒューズは 5 mA である。",
                 "周波数特性は 90〜200 Hz における振幅が 95〜105 % の範囲にある。",
                 "時定数は校正用電圧の 3.2 秒後の振れを 100 % として 1/e の高さまでの時間を表す。"
             ],
@@ -260,7 +260,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 17,
-            "text": "心拍数が 60 回/分の健常成人の心電図でみられるのはどれか。2つ選べ。",
+            "text": "心拍数が 60 回/分の健常成人の心電図でみられるのはどれか。**2つ選べ**。",
             "options": [
                 "P 幅 0.2 秒",
                 "PQ 間隔 0.3 秒",
@@ -293,13 +293,13 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 19,
-            "text": "運動負荷心電図検査で正しいのはどれか。2つ選べ。",
+            "text": "運動負荷心電図検査で正しいのはどれか。**2つ選べ**。",
             "options": [
                 "双極四肢誘導のみ記録すればよい。",
-                "ST が2mm 以上低下すれば中止する。",
+                "ST が 2mm 以上低下すれば中止する。",
                 "トレッドミル運動負荷試験中の血圧測定は必要ない。",
                 "マスター負荷試験の昇降回数は年齢、性別および体重で求められる。",
-                "マスターダブル負荷試験はシングルと同じ昇降回数で\b分間実施する。"
+                "マスターダブル負荷試験はシングルと同じ昇降回数で3分間実施する。"
             ],
             "correctAnswers": [
                 1,
@@ -326,7 +326,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 21,
-            "text": "血液ガス分析装置で実測されるのはどれか。2つ選べ。",
+            "text": "血液ガス分析装置で実測されるのはどれか。**2つ選べ**。",
             "options": [
                 "pH",
                 "SaO2",
@@ -347,8 +347,8 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
             "options": [
                 "REM 睡眠時には急速眼球運動はみられない。",
                 "脳波上の覚醒は睡眠呼吸障害の重症度とは関係しない。",
-                "non REM 睡眠では、睡眠ステージ\u0006はステージ\u0004よりも浅い睡眠である。",
-                "無呼吸指数は、10 秒以上持続する無呼吸が\u0004時間当たりに出現する回数である。",
+                "non REM 睡眠では、睡眠ステージ4 はステージ1 よりも浅い睡眠である。",
+                "無呼吸指数は、10 秒以上持続する無呼吸が1時間当たりに出現する回数である。",
                 "経皮的動脈血酸素飽和度が 90 % 以下になったら検査を中止しなければならない。"
             ],
             "correctAnswers": [
@@ -359,7 +359,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 23,
-            "text": "大脳皮質運動野の神経細胞の軸索が通過しない部位はどれか。",
+            "text": "大脳皮質運動野の神経細胞の軸索が**通過しない**部位はどれか。",
             "options": [
                 "内 包",
                 "側 索",
@@ -455,7 +455,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 29,
-            "text": "日内変動が小さいのはどれか。2つ選べ。",
+            "text": "日内変動が小さいのはどれか。**2つ選べ**。",
             "options": [
                 "中性脂肪",
                 "血漿浸透圧",
@@ -632,7 +632,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 40,
-            "text": "免疫抑制薬はどれか。2つ選べ。",
+            "text": "免疫抑制薬はどれか。**2つ選べ**。",
             "options": [
                 "フェニトイン",
                 "タクロリムス",
@@ -665,7 +665,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 42,
-            "text": "低ナトリウム血症をきたすのはどれか。2つ選べ。",
+            "text": "低ナトリウム血症をきたすのはどれか。**2つ選べ**。",
             "options": [
                 "尿崩症",
                 "Addison 病",
@@ -682,7 +682,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 43,
-            "text": "ICG 残存率の5分、10 分、15 分値をプロットした図を示す。\nICG 消失率として最も近いのはどれか。\nただし、消失率は 0.693 を半減時間0分2で除した値とする。",
+            "text": "ICG 残存率の5分、10 分、15 分値をプロットした図を示す。\nICG 消失率として最も近いのはどれか。\nただし、消失率は 0.693 を半減時間(分)で除した値とする。",
             "options": [
                 "0.051",
                 "0.180",
@@ -698,7 +698,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 44,
-            "text": "遺伝子検査とその目的の組合せで正しいのはどれか。2つ選べ。",
+            "text": "遺伝子検査とその目的の組合せで正しいのはどれか。**2つ選べ**。",
             "options": [
                 "RT-PCR 法 --- DNA の定量",
                 "RFLP 法 --- 遺伝子多型の解析",
@@ -763,13 +763,13 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 48,
-            "text": "循環障害でないのはどれか。",
+            "text": "循環障害**でない**のはどれか。",
             "options": [
                 "化 生",
                 "虚 血",
                 "梗 塞",
                 "塞 栓",
-                "浮腫"
+                "浮 腫"
             ],
             "correctAnswers": [
                 0
@@ -779,7 +779,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 49,
-            "text": "胃癌で正しいのはどれか。2つ選べ。",
+            "text": "胃癌で正しいのはどれか。**2つ選べ**。",
             "options": [
                 "スキルス癌<硬癌>は予後が良い。",
                 "早期癌には Borrmann 分類を用いる。",
@@ -796,7 +796,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 50,
-            "text": "固定液と組成の組合せで正しいのはどれか。2つ選べ。",
+            "text": "固定液と組成の組合せで正しいのはどれか。**2つ選べ**。",
             "options": [
                 "ブアン液 エタノール",
                 "カルノア液 メタノール",
@@ -813,7 +813,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 51,
-            "text": "迅速脱灰液0Plank-Rychlo 法2に使用されるのはどれか。2つ選べ。",
+            "text": "迅速脱灰液(Plank-Rychlo 法)に使用されるのはどれか。**2つ選べ**。",
             "options": [
                 "塩 酸",
                 "ギ 酸",
@@ -846,9 +846,9 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 53,
-            "text": " PAS染色で使用しないのはどれか。",
+            "text": " PAS染色で**使用しない**のはどれか。",
             "options": [
-                "塩酸",
+                "塩 酸",
                 "アニリン",
                 "過ヨウ素酸",
                 "塩基性フクシン",
@@ -862,11 +862,11 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 54,
-            "text": "肺のホルマリン固定後の肉眼像(別冊No.8Ａ)とH-E染色標本(別冊No.8Ｂ)とを別に示す。病原体の検出に有効な染色はどれか。",
+            "text": "肺のホルマリン固定後の肉眼像(別冊No.8A)とH-E染色標本(別冊No.8B)とを別に示す。\n病原体の検出に有効な染色はどれか。",
             "options": [
                 "Gram染色",
                 "mucicarmine 染色",
-                "Victoria blue染色",
+                "Victoria blue 染色",
                 "Warthin-Starry 染色",
                 "Ziehl-Neelsen 染色"
             ],
@@ -910,7 +910,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 57,
-            "text": "胸水細胞診の Papanicolaou 染色標本(別冊No.9Ａ)と Giemsa 染色標本(別冊No.9Ｂ)とを別に示す。\n矢印で示すのはどれか。",
+            "text": "胸水細胞診の Papanicolaou 染色標本(別冊No.9A)と Giemsa 染色標本(別冊No.9B)とを別に示す。\n矢印で示すのはどれか。",
             "options": [
                 "組織球",
                 "腺癌細胞",
@@ -990,10 +990,10 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 62,
-            "text": "ビタミン K 欠乏で異常を示すのはどれか。2つ選べ。",
+            "text": "ビタミン K 欠乏で異常を示すのはどれか。**2つ選べ**。",
             "options": [
                 "出血時間",
-                "第因子活性",
+                "第ⅩⅢ因子活性",
                 "フィブリノゲン",
                 "プロテイン C 活性",
                 "プロトロンビン時間<PT>"
@@ -1007,7 +1007,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 63,
-            "text": "23 歳の女性。血液所見：Hb 9.8 g/dl、MCV 72 fl、MCHC 29 g/dl。白血球数と血小板数とに異常を認めない。血清鉄は上昇し、総鉄結合能は低下している。考えられるのはどれか。2つ選べ。",
+            "text": "23 歳の女性。血液所見：Hb 9.8g/dl、MCV 72fl、MCHC 29g/dl。白血球数と血小板数とに異常を認めない。血清鉄は上昇し、総鉄結合能は低下している。\n考えられるのはどれか。**2つ選べ**。",
             "options": [
                 "サラセミア",
                 "鉄欠乏性貧血",
@@ -1024,7 +1024,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 64,
-            "text": "悪性貧血の所見でないのはどれか。",
+            "text": "悪性貧血の所見**でない**のはどれか。",
             "options": [
                 "過分葉好中球増加",
                 "間接ビリルビン高値",
@@ -1040,7 +1040,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 65,
-            "text": "骨髄異形成症候群で特徴的なのはどれか。2つ選べ。",
+            "text": "骨髄異形成症候群で特徴的なのはどれか。**2つ選べ**。",
             "options": [
                 "環状鉄芽球",
                 "赤血球連銭形成",
@@ -1057,11 +1057,11 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 66,
-            "text": "次の文により 66、67 の問いに答えよ。\n34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5 g/dl、血小板 1.1 万/μl、血清FDP 42 μg/ml、血漿フィブリノゲン 95 mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No.10)を別に示す。\n\n考えられるのはどれか。",
+            "text": "**次の文により 66、67 の問いに答えよ。**\n34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5g/dl、血小板 1.1万/μl、血清FDP 42μg/ml、血漿フィブリノゲン 95mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No.10)を別に示す。\n\n考えられるのはどれか。",
             "options": [
                 "再生不良性貧血",
                 "巨赤芽球性貧血",
-                "播種性血管内凝固ìDICð",
+                "播種性血管内凝固<DIC>",
                 "先天性無フィブリノゲン血症",
                 "血栓性血小板減少性紫斑病<TTP>"
             ],
@@ -1073,7 +1073,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 67,
-            "text": "34 歳の男性。血液所見：白血球 5,200/μl、Hb 7.5 g/dl、血小板 1.1 万/μl、血清FDP 42 μg/ml、血漿フィブリノゲン 95 mg/dl。骨髄血の Wright-Giemsa 染色標本(別冊No.10)を別に示す。\n\nこの患者で予想される遺伝子異常はどれか。",
+            "text": "この患者で予想される遺伝子異常はどれか。",
             "options": [
                 "AML1/ETO",
                 "BCR/ABL",
@@ -1089,7 +1089,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 68,
-            "text": "RNA と DNA のいずれかのみを有するのはどれか。2つ選べ。",
+            "text": "RNA と DNA のいずれかのみを有するのはどれか。**2つ選べ**。",
             "options": [
                 "ウイルス",
                 "クラミジア",
@@ -1122,7 +1122,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 70,
-            "text": "消毒用エタノール070〜80 % エタノール2に対して抵抗性を有するのはどれか。",
+            "text": "消毒用エタノール(70〜80 % エタノール)に対して抵抗性を有するのはどれか。",
             "options": [
                 "大腸菌",
                 "結核菌",
@@ -1138,7 +1138,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 71,
-            "text": "β-ラクタム環を有する抗菌薬はどれか。2つ選べ。",
+            "text": "β-ラクタム環を有する抗菌薬はどれか。**2つ選べ**。",
             "options": [
                 "セフェム系",
                 "ポリペプチド系",
@@ -1155,7 +1155,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 72,
-            "text": "β-ラクタマーゼ試験を実施する必要がないのはどれか。",
+            "text": "β-ラクタマーゼ試験を実施する**必要がない**のはどれか。",
             "options": [
                 "Haemophilus influenzae",
                 "Moraxella catarrhalis",
@@ -1203,7 +1203,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 75,
-            "text": "Acinetobacter baumannii について誤っているのはどれか。",
+            "text": "Acinetobacter baumannii について**誤っている**のはどれか。",
             "options": [
                 "運動性がある。",
                 "偏性好気性である。",
@@ -1219,7 +1219,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 76,
-            "text": "Orientia tsutsugamushi について正しいのはどれか。2つ選べ。",
+            "text": "Orientia tsutsugamushi について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "尿中抗原検査で検出できる。",
                 "培養には血液寒天培地を用いる。",
@@ -1268,11 +1268,11 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 79,
-            "text": "T 細胞について正しいのはどれか。2つ選べ。",
+            "text": "T 細胞について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "即時型アレルギーに関与する。",
                 "移植された非自己細胞を攻撃する。",
-                "ヘルパー T 細胞には Th\u0004と Th\u0002とがある。",
+                "ヘルパー T 細胞には Th 1 と Th 2 とがある。",
                 "健常成人の末Ò血中では B 細胞よりも少ない。",
                 "キラー T 細胞は MHC クラスⅡ抗原と反応する。"
             ],
@@ -1285,7 +1285,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 80,
-            "text": "IgG について正しいのはどれか。2つ選べ。",
+            "text": "IgG について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "胎盤通過性がある。",
                 "分子量は約 90 万である。",
@@ -1350,7 +1350,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 84,
-            "text": "疾患とアレルギーの分類の組合せで正しいのはどれか。2つ選べ。",
+            "text": "疾患とアレルギーの分類の組合せで正しいのはどれか。**2つ選べ**。",
             "options": [
                 "気管支喘息 --- Ⅱ型",
                 "重症筋無力症 --- Ⅱ型",
@@ -1383,7 +1383,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 86,
-            "text": "次の文により 86、87 の問いに答えよ。\n58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0 g/dl、IgG 400 mg/dl0基準870〜1,7002、IgA 10 mg/dl0基準 110〜4102、IgM5mg/dl0基準 35〜2202。尿蛋白は試験紙法、色素法 300 mg/dl0基準 20 以下。\n\nこの患者の検査所見として考えられるのはどれか。",
+            "text": "**次の文により 86、87 の問いに答えよ。** \n58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0g/dl、IgG 400mg/dl(基準870〜1,700)、IgA 10mg/dl(基準 110〜410)、IgM 5mg/dl(基準 35〜220)。尿蛋白は試験紙法(±)、色素法 300mg/dl(基準 20 以下)。\n\nこの患者の検査所見として考えられるのはどれか。",
             "options": [
                 "血清 C3 高値",
                 "血清クリオグロブリン陽性",
@@ -1399,7 +1399,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 87,
-            "text": "58 歳の男性。腰痛を主訴に来院した。血清総蛋白 6.0 g/dl、IgG 400 mg/dl0基準870〜1,7002、IgA 10 mg/dl0基準 110〜4102、IgM5mg/dl0基準 35〜2202。尿蛋白は試験紙法、色素法 300 mg/dl0基準 20 以下。\n\n考えられるのはどれか。",
+            "text": "考えられるのはどれか。",
             "options": [
                 "多発性骨髄腫",
                 "ネフローゼ症候群",
@@ -1415,7 +1415,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 88,
-            "text": "輸血検査について正しいのはどれか。2つ選べ。",
+            "text": "輸血検査について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "試験管法の赤血球浮遊液の濃度は 10 % になるように調整する。",
                 "冷蔵庫から取り出した試薬は温度が上昇する前に使用する。",
@@ -1432,7 +1432,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 89,
-            "text": "母児間血液型不適合による新生児溶血性疾患について正しいのはどれか。2つ選べ。",
+            "text": "母児間血液型不適合による新生児溶血性疾患について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "血管内で溶血する。",
                 "交換輸血で治療する。",
@@ -1561,7 +1561,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 97,
-            "text": "病院電気設備0JIS T 10222で定められている特別非常電源の立ち上がり時間と最小の連続運転時間との組合せで正しいのはどれか。立ち上がり時間 --- 連続運転時間",
+            "text": "病院電気設備(JIS T 1022)で定められている特別非常電源の立ち上がり時間と最小の連続運転時間との組合せで正しいのはどれか。\n立ち上がり時間 --- 連続運転時間",
             "options": [
                 "0.5 秒以内 --- 10 分以上",
                 "10 秒以内 --- 1 時間以上",
@@ -1577,7 +1577,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 98,
-            "text": "PC と周辺機器とをつなぐインターフェースでないのはどれか。",
+            "text": "PC と周辺機器とをつなぐインターフェース**でない**のはどれか。",
             "options": [
                 "Bluetooth",
                 "IEEE 1394",
@@ -1609,7 +1609,7 @@ export const questiondata: { [key: number]: { id: number, text: string, options:
         },
         {
             "id": 100,
-            "text": "電子天秤について正しいのはどれか。2つ選べ。",
+            "text": "電子天秤について正しいのはどれか。**2つ選べ**。",
             "options": [
                 "高温多湿の場所に保管する。",
                 "気流の生じない場所で使用する。",

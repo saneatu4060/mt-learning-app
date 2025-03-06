@@ -3,6 +3,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 
 interface Question {
     id: number;
@@ -10,7 +11,7 @@ interface Question {
     options: string[];
     correctAnswers: number[];
     multipleAnswers: boolean;
-    isImageUrl: string
+    isImageUrl: string;
 }
 
 interface QuestionComponentProps {
@@ -26,18 +27,17 @@ const QuestionComponent = ({
     showResult,
     onAnswer,
 }: QuestionComponentProps) => {
-    // オプションデータをメモ化し、各選択肢の正誤と選択状況を判定
     const optionsData = useMemo(() => {
         return question.options.map((option, index) => {
             const isCorrect = question.correctAnswers.includes(index);
             const isSelected = userAnswer.includes(index);
-            let bgColor = "bg-white/70"; // デフォルトの背景色
+            let bgColor = "bg-white/70";
 
             if (showResult) {
                 if (isCorrect) {
-                    bgColor = "bg-green-100"; // 正解の場合の背景色
+                    bgColor = "bg-green-100";
                 } else if (isSelected) {
-                    bgColor = "bg-red-100"; // 不正解の場合の背景色
+                    bgColor = "bg-red-100";
                 }
             }
 
@@ -45,7 +45,6 @@ const QuestionComponent = ({
         });
     }, [question, userAnswer, showResult]);
 
-    // 解答の変更処理（単一選択と複数選択に対応）
     const handleChange = (value: string | number[]) => {
         if (Array.isArray(value)) {
             onAnswer(value);
@@ -55,43 +54,35 @@ const QuestionComponent = ({
                 onAnswer([newValue]);
             }
         }
-    }
+    };
 
-    function checkIfContainsPng(text: string) {
-        return text.includes('.png');
-    }
+    const checkIfContainsPng = (text: string) => text.includes('.png');
 
     return (
-        <div>
+        <div className="space-y-2">
             <h3 className="text-xl font-semibold">{question.id}問目</h3>
-            <h3 className="p-4 text-base font-medium ">{question.text}</h3>
-
-            {question.isImageUrl ? (
+            <h3 className="p-4 text-base font-medium whitespace-pre-wrap">
+                <ReactMarkdown>{question.text}</ReactMarkdown>
+            </h3>
+            {question.isImageUrl && (
                 <>
                     <Image
-                        src={question.isImageUrl || ""}
+                        src={question.isImageUrl}
                         alt="No image"
                         width={300}
                         height={200}
-                        style={{
-                            margin: "auto",
-                        }}
+                        style={{ margin: "auto" }}
                     />
-                    <h3 className="p-3 text-center text-sm font-medium ">別冊No.1</h3>
+                    <h3 className="p-3 text-center text-sm font-medium">別冊No.1</h3>
                 </>
-            ) : (null)}
+            )}
             {question.multipleAnswers ? (
                 <div className="space-y-5">
                     {optionsData.map(({ index, option, isCorrect, isSelected, bgColor }) => (
                         <label
                             htmlFor={`option-${index}`}
                             key={index}
-                            className={`
-                                flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg 
-                                hover:shadow-2xl hover:bg-indigo-50 
-                                focus-within:ring-2 focus-within:ring-indigo-500 
-                                transition-all cursor-pointer  // Make sure the cursor changes
-                            `}
+                            className={`flex items-center gap-3 p-4 ${bgColor} group rounded-xl shadow-lg hover:shadow-2xl hover:bg-indigo-50 focus-within:ring-2 focus-within:ring-indigo-500 transition-all cursor-pointer`}
                         >
                             <Checkbox
                                 id={`option-${index}`}
@@ -106,7 +97,7 @@ const QuestionComponent = ({
                                 disabled={showResult}
                             />
                             <span className="flex-1 text-gray-700">
-                                {option}
+                                <ReactMarkdown>{option}</ReactMarkdown>
                             </span>
                             {showResult && (
                                 <span className={isCorrect ? "text-green-500" : "text-red-500"}>
@@ -122,13 +113,7 @@ const QuestionComponent = ({
                         <label
                             htmlFor={`option-${index}`}
                             key={index}
-                            className={`
-                                        flex items-center gap-3 p-4 ${bgColor} group rounded-xl p-4 shadow-lg 
-                                        hover:shadow-2xl hover:bg-indigo-50 
-                                        focus-within:ring-2 focus-within:ring-indigo-500 
-                                        transition-all
-                                        w-full
-                                    `}
+                            className={`flex items-center gap-3 p-4 ${bgColor} group rounded-xl shadow-lg hover:shadow-2xl hover:bg-indigo-50 focus-within:ring-2 focus-within:ring-indigo-500 transition-all w-full`}
                         >
                             <RadioGroupItem
                                 value={index.toString()}
@@ -138,14 +123,16 @@ const QuestionComponent = ({
                             />
                             {checkIfContainsPng(option) ? (
                                 <Image
-                                    src={option || ""}
+                                    src={option}
                                     alt="No image"
                                     width={250}
                                     height={50}
                                     style={{ margin: "auto" }}
                                 />
                             ) : (
-                                <span className="flex-1 text-gray-700">{option}</span>
+                                <span className="flex-1 text-gray-700">
+                                    <ReactMarkdown>{option}</ReactMarkdown>
+                                </span>
                             )}
                             {showResult && (
                                 <span className={isCorrect ? "text-green-500" : "text-red-500"}>
@@ -155,10 +142,9 @@ const QuestionComponent = ({
                         </label>
                     ))}
                 </RadioGroup>
-            )
-            }
-        </div >
+            )}
+        </div>
     );
-}
+};
 
-export default QuestionComponent 
+export default QuestionComponent;

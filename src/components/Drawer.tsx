@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,11 +11,13 @@ interface QuizDrawerProps {
         text: string;
     }[];
     currentQuestionIndex: number;
+    onQuestionSelect: (index: number) => void;
 }
 
 export function QuizDrawer({
     questions,
     currentQuestionIndex,
+    onQuestionSelect,
 }: QuizDrawerProps) {
     const [isOpen, setIsOpen] = React.useState(false);
 
@@ -42,7 +43,7 @@ export function QuizDrawer({
                 onClick={toggleDrawer}
                 className={cn(
                     "fixed left-0 top-1/2 z-20 -translate-y-1/2 transform rounded-r-md bg-blue-600 p-2 text-white transition-all",
-                    isOpen && "left-80"
+                    isOpen && "left-64 md:left-80"
                 )}
                 aria-label={isOpen ? "Close navigation" : "Open navigation"}
             >
@@ -56,7 +57,7 @@ export function QuizDrawer({
             {/* ドロワー */}
             <div
                 className={cn(
-                    "fixed rounded-lg left-0 top-20 z-50 w-80 -translate-x-full transform overflow-y-auto bg-white transition-transform duration-200 ease-in-out",
+                    "fixed rounded-lg left-0 top-20 z-50 w-64 md:w-80 -translate-x-full transform overflow-y-auto bg-white transition-transform duration-200 ease-in-out",
                     isOpen && "translate-x-0"
                 )}
             >
@@ -65,6 +66,7 @@ export function QuizDrawer({
                     <SidebarComponent
                         questions={questions}
                         currentQuestionIndex={currentQuestionIndex}
+                        onQuestionSelect={onQuestionSelect}
                     />
                 </div>
             </div>
