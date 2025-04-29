@@ -1,6 +1,5 @@
-import Link from "next/link";
-import React from "react";
-import { MobileMenu } from "./MobileMenu";
+import Link from "next/link"
+import { MobileMenu } from "./MobileMenu" // MobileMenu コンポーネントがある想定
 
 const navItems = [
     { label: "ホーム", href: "/" },
@@ -8,9 +7,9 @@ const navItems = [
     { label: "模擬試験", href: "/exam" },
 ]
 
-const Navbar = async () => {
+const Navbar = () => {
     return (
-        <div className="container mx-auto flex h-2 items-center justify-between ">
+        <>
             {/* モバイルメニュー（左側） */}
             <div className="md:hidden">
                 <MobileMenu navItems={navItems} />
@@ -18,15 +17,20 @@ const Navbar = async () => {
 
             {/* ロゴ（モバイルでは中央、デスクトップでは左） */}
             <div className="absolute left-1/2 -translate-x-1/2 transform md:static md:left-0 md:translate-x-0">
-                MT-Learning
+                <Link href="/" className="text-base sm:text-lg font-bold text-gray-800 hover:text-indigo-600 transition-colors">
+                    MT-Learning
+                </Link>
             </div>
 
             {/* デスクトップナビゲーション（中央） */}
-            <nav className="hidden md:flex md:flex-1 md:items-center md:justify-center">
-                <ul className="flex space-x-6">
+            <nav className="hidden md:flex md:items-center">
+                <ul className="flex space-x-4 lg:space-x-6 xl:space-x-8">
                     {navItems.map((item) => (
                         <li key={item.label}>
-                            <Link href={item.href} className="text-sm font-medium text-gray-800 hover:text-gray-600">
+                            <Link
+                                href={item.href}
+                                className="text-xs lg:text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors"
+                            >
                                 {item.label}
                             </Link>
                         </li>
@@ -34,17 +38,17 @@ const Navbar = async () => {
                 </ul>
             </nav>
 
-            {/* ログアウトボタン（右側） */}
-            <div className="hidden md:block">
+            {/* ログイン/ログアウトボタン（右側） */}
+            <div className="hidden md:flex items-center">
                 <Link
-                    href="/logout"
-                    className="rounded bg-[#ff7a7a] px-4 py-2 text-sm font-medium text-white hover:bg-[#ff6666]"
+                    href="/login"
+                    className="rounded bg-blue-600 px-2 py-1 sm:px-3 sm:py-1.5 text-xs font-medium text-white hover:bg-blue-700 transition-colors"
                 >
-                    ログイン（未実装）
+                    ログイン
                 </Link>
             </div>
-        </div>
-    );
-};
+        </>
+    )
+}
 
-export default Navbar;
+export default Navbar

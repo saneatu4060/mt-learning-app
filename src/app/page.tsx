@@ -1,35 +1,49 @@
+import { Card, CardContent } from "@/components/ui/card";
+import newsData from '@/data/news.json'; // ★ JSON ファイルをインポート
+
+// ★ (任意) 型定義を追加するとより安全です
+interface NewsItem {
+  date: string;
+  text: string;
+}
+
 export const metadata = {
   title: "ホーム | MT-Learning",
   description: "過去問を解いて学習を始めましょう！",
 };
 
 const Home = () => {
-  const newsItems = [
-    { date: "2025/03/20", text: "第58回午後問題追加" },
-    { date: "2025/03/06", text: "文字を一部太文字、文字化け修正、一覧から問題表示" },
-    { date: "2025/03/04", text: "ディレクトリ構成、ページ遷移、デザイン一部修正" },
-    { date: "2025/03/02", text: "ヘッダー、一部デザイン修正" },
-    { date: "2025/02/17", text: "デザイン修正" },
-  ];
+  // ★ ハードコードされた newsItems を削除
+  // const newsItems = [ ... ];
+
+  // ★ インポートしたデータを使用 (型アサーション or 型ガード)
+  const newsItems: NewsItem[] = newsData;
 
   return (
-    <div className="container mx-auto p-4">
-      {/* お知らせセクション */}
-      <h3 className="text-2xl text-center font-semibold mb-4">お知らせ</h3>
-      <div className="bg-white rounded-xl shadow-md md:m-4 overflow-hidden">
-        <ul>
-          {newsItems.map((item, index) => (
-            <li key={index} className="border-b border-gray-200 px-6 py-4">
-              <div className="flex items-center">
-                <div className="bg-blue-500 text-white text-xs font-bold rounded-full px-3 py-1 mr-4">
-                  {item.date}
+    <div className="container mx-auto px-3 py-4 sm:px-4 sm:py-6 md:px-6 md:py-8 lg:py-10">
+      <h2 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold mb-4 sm:mb-6">お知らせ</h2>
+
+      <Card className="overflow-hidden my-4 sm:my-6 max-w-2xl mx-auto shadow-sm">
+        <CardContent className="p-0">
+          <ul className="divide-y divide-gray-200">
+            {/* ★ インポートした newsItems を map する */}
+            {newsItems.map((item, index) => (
+              <li
+                // ★ key は index でも良いですが、ユニークなIDがあればそれがベスト
+                key={item.date + '-' + index} // date と index を組み合わせる例
+                className="px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 md:py-4 hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0">
+                  <div className="flex-shrink-0 bg-blue-500 text-white text-xs font-bold rounded-full px-2.5 py-1 sm:px-3 sm:mr-3 md:mr-4 w-fit">
+                    {item.date}
+                  </div>
+                  <span className="text-sm sm:text-base text-gray-700 break-words">{item.text}</span>
                 </div>
-                <span className="text-sm text-gray-700">{item.text}</span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
     </div>
   );
 };
