@@ -2,8 +2,6 @@
 import React, { useState } from 'react'; // ★ useState をインポート
 import Link from 'next/link';
 import { useExamStore } from '@/store/examStore';
-import { Question } from '@/types/examData';
-import { Check, X, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 // Dialog 関連をインポート
@@ -123,7 +121,7 @@ const ExamResultComponent = ({ categoryId }: ExamResultComponentProps) => {
             </footer>
 
             {/* ★ 問題詳細表示モーダル ★ */}
-            <Dialog open={selectedQuestionIndex !== null} onOpenChange={(isOpen: any) => !isOpen && handleCloseModal()}>
+            <Dialog open={selectedQuestionIndex !== null} onOpenChange={(isOpen) => !isOpen && handleCloseModal()}>
                 <DialogContent className="max-w-3xl w-full max-h-[85vh] overflow-y-auto">
                     <DialogHeader>
                         <DialogTitle>問題 {selectedQuestionData?.id} 詳細</DialogTitle>

@@ -39,7 +39,7 @@ interface ExamState {
     setRemainingTime: (time: number) => void; // タイマー用
 }
 
-export const useExamStore = create<ExamState>((set, get) => ({
+export const useExamStore = create<ExamState>((set) => ({
     // --- 初期状態 ---
     questions: [],
     userAnswers: new Map(),
