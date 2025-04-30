@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
 import Link from "next/link"
-import { ChevronLeft, ChevronRight, Clock, ArrowLeft } from "lucide-react"
+import { ChevronLeft, ChevronRight, Clock, ArrowLeft, List } from "lucide-react"
 import { useExamStore } from "@/store/examStore"
 import { examData } from "@/data/examData"
 import type { Question } from "@/types/examData"
 import QuestionComponent from "@/components/QuestionComponent"
-import { QuizDrawer } from "@/components/Drawer"
 import ExamResultComponent from "@/components/ExamResultComponent"
 import { Button } from "@/components/ui/button"
 import {
@@ -21,6 +20,8 @@ import {
     AlertDialogAction,
     AlertDialogCancel,
 } from "@/components/ui/alert-dialog"
+import { Dialog, DialogClose, DialogContent, DialogTitle, DialogHeader, DialogFooter } from "@/components/ui/dialog"
+import SidebarComponent from "@/components/Sidebar"
 
 const formatTime = (totalSeconds: number | null): string => {
     if (totalSeconds === null || totalSeconds < 0) {
@@ -49,9 +50,16 @@ const ExamPage = () => {
     const startTime = useExamStore((state) => state.startTime)
     const remainingTime = useExamStore((state) => state.remainingTime)
     const setRemainingTime = useExamStore((state) => state.setRemainingTime)
+    const examResults = useExamStore((state) => state.examResults)
 
     const TIME_LIMIT_MINUTES = 150
     const [isConfirmingFinish, setIsConfirmingFinish] = useState(false)
+    const [isListDialogOpen, setIsListDialogOpen] = useState(false)
+
+    const handleQuestionSelectFromDialog = (index: number) => {
+        setCurrentIndex(index)
+        setIsListDialogOpen(false) // ダイアログを閉じる
+    }
 
     // 試験の初期化
     useEffect(() => {
@@ -132,7 +140,7 @@ const ExamPage = () => {
             <div className="flex justify-center items-center min-h-[50vh] p-4">
                 <div className="text-center">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500 mx-auto mb-4"></div>
-                    <p className="text-gray-600">試験を読み込んでいます...</p>
+                    <p className="text-muted-foreground">試験を読み込んでいます...</p>
                 </div>
             </div>
         )
@@ -147,9 +155,9 @@ const ExamPage = () => {
                     <header className="flex flex-wrap gap-2 justify-between items-center mb-3 sm:mb-4 md:mb-6 flex-shrink-0">
                         <Link
                             href={`/exam/${categoryId}`}
-                            className="text-gray-600 hover:text-gray-900 text-xs sm:text-sm flex items-center gap-1 hover:gap-2 transition-all duration-300 group"
+                            className="text-muted-foreground hover:text-primary text-xs sm:text-sm flex items-center gap-1 hover:gap-2 transition-all duration-300 group"
                         >
-                            <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 group-hover:text-indigo-600 transition-colors" />
+                            <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 group-hover:text-primary transition-colors" />
                             <span>午前/午後選択へ</span>
                         </Link>
 
@@ -160,14 +168,26 @@ const ExamPage = () => {
                             </div>
                         )}
 
-                        <Button
-                            onClick={handleFinishExamClick}
-                            variant="destructive"
-                            size="sm"
-                            className="px-2 py-1 text-xs sm:text-sm md:px-3 md:py-1.5"
-                        >
-                            解答を終了する
-                        </Button>
+                        <div className="flex items-center gap-2">
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                className="px-2 py-1 text-xs sm:text-sm"
+                                onClick={() => setIsListDialogOpen(true)}
+                            >
+                                <List className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1" />
+                                <span>問題一覧</span>
+                            </Button>
+
+                            <Button
+                                onClick={handleFinishExamClick}
+                                variant="destructive"
+                                size="sm"
+                                className="px-2 py-1 text-xs sm:text-sm md:px-3 md:py-1.5"
+                            >
+                                解答を終了する
+                            </Button>
+                        </div>
                     </header>
 
                     {/* 問題表示部 */}
@@ -196,7 +216,7 @@ const ExamPage = () => {
                             <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4" />
                             <span className="hidden sm:inline">前へ</span>
                         </Button>
-                        <div className="text-xs sm:text-sm text-gray-600">
+                        <div className="text-xs sm:text-sm text-muted-foreground font-bold">
                             {currentQuestionIndex + 1} / {totalQuestions}
                         </div>
                         <Button
@@ -211,9 +231,43 @@ const ExamPage = () => {
                         </Button>
                     </footer>
                 </main>
-
-                <QuizDrawer />
             </div>
+
+            {/* 問題一覧ダイアログ */}
+            <Dialog open={isListDialogOpen} onOpenChange={setIsListDialogOpen}>
+                <DialogContent className="max-w-md w-full max-h-[80vh] flex flex-col">
+                    <DialogHeader className="pb-2">
+                        <DialogTitle className="flex items-center justify-between">
+                            <span>問題一覧</span>
+                            {remainingTime !== null && (
+                                <span className="text-xs font-medium text-red-600">残り時間: {formatTime(remainingTime)}</span>
+                            )}
+                        </DialogTitle>
+                    </DialogHeader>
+
+                    <div className="flex-grow overflow-y-auto py-2">
+                        <SidebarComponent
+                            questions={questions}
+                            currentQuestionIndex={currentQuestionIndex}
+                            userAnswers={userAnswers}
+                            showResults={Array(questions.length).fill(isFinished)}
+                            examResults={examResults}
+                            flags={flags}
+                            onQuestionSelect={handleQuestionSelectFromDialog}
+                        />
+                    </div>
+
+                    <DialogFooter className="mt-auto pt-4 border-t">
+                        <DialogClose asChild>
+                            <Button type="button" variant="outline">
+                                閉じる
+                            </Button>
+                        </DialogClose>
+                    </DialogFooter>
+                </DialogContent>
+            </Dialog>
+
+            {/* 解答終了確認ダイアログ */}
             <AlertDialog open={isConfirmingFinish} onOpenChange={setIsConfirmingFinish}>
                 <AlertDialogContent>
                     <AlertDialogHeader>

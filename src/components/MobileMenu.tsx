@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"; // useRef を追加
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 interface NavItem {
     label: string;
@@ -54,12 +55,13 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
         <div className="relative">
             {/* ハンバーガーメニューボタン */}
             <button
-                ref={buttonRef} // ボタンへの参照を設定
+                ref={buttonRef}
                 onClick={toggleMenu}
-                className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" // focus スタイル追加
+                // ★ 色をテーマ対応に
+                className="p-2 text-foreground/70 hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary rounded-md"
                 aria-label={isOpen ? "メニューを閉じる" : "メニューを開く"}
                 aria-expanded={isOpen}
-                aria-controls="mobile-menu-items" // メニュー本体との関連付け
+                aria-controls="mobile-menu-items"
             >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -67,17 +69,17 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
             {/* ドロップダウンメニュー */}
             {/* ★ absolute に変更し、ボタンのすぐ下に表示 */}
             <div
-                ref={menuRef} // メニューへの参照を設定
-                id="mobile-menu-items" // ボタンとの関連付け用ID
+                ref={menuRef}
+                id="mobile-menu-items"
                 className={cn(
-                    "absolute left-0 mt-2 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
-                    "transition ease-out duration-100 transform", // アニメーション
-                    isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none" // 開閉状態
+                    // ★ 背景、文字色、境界線をテーマ対応に (popoverを使用)
+                    "absolute left-0 mt-2 w-56 origin-top-left rounded-md bg-popover text-popover-foreground border shadow-lg focus:outline-none",
+                    "transition ease-out duration-100 transform",
+                    isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
                 )}
                 role="menu"
                 aria-orientation="vertical"
-                aria-labelledby="mobile-menu-button" // ボタンとの関連付け (ボタンにid="mobile-menu-button"が必要だがaria-labelでも可)
-                tabIndex={-1} // 直接フォーカスは不要
+                tabIndex={-1}
             >
                 {/* py-1 はリスト全体の上下の僅かな余白 */}
                 <nav className="py-1" role="none">
@@ -85,25 +87,30 @@ export function MobileMenu({ navItems }: MobileMenuProps) {
                         <Link
                             key={item.label}
                             href={item.href}
-                            // スタイル調整: block, px-4 py-2, text-sm
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                            onClick={() => setIsOpen(false)} // クリックで閉じる
-                            role="menuitem"
-                            tabIndex={isOpen ? 0 : -1} // 開いている時だけフォーカス
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
-                    {/* モバイルメニューにログイン/ログアウトボタンも表示する場合 */}
-                    <div className="mt-1 pt-1 border-t border-gray-100 px-3">
-                        <Link
-                            href="/login" // or logout
-                            className="block w-full text-center rounded bg-blue-600 px-4 py-2 text-xs font-medium text-white hover:bg-blue-700 transition-colors my-1" // 少し小さく
+                            // ★ 色、ホバー色をテーマ対応に
+                            className="block px-4 py-2 text-sm text-popover-foreground hover:bg-accent hover:text-accent-foreground rounded-sm" // rounded-sm追加
                             onClick={() => setIsOpen(false)}
                             role="menuitem"
                             tabIndex={isOpen ? 0 : -1}
                         >
-                            ログイン {/* (未実装) */}
+                            {item.label}
+                        </Link>
+                    ))}
+
+                    {/* モバイルメニューにログイン/ログアウトボタンも表示する場合 */}
+                    <div className="mt-1 pt-1 border-t border-border px-3 pb-1"> {/* pb-1 追加 */}
+                        {/* ★ Button コンポーネントを使用 (variant="default" or "secondary") */}
+                        <Link href="/login" passHref legacyBehavior>
+                            <Button
+                                variant="default" // or "secondary"
+                                size="sm"
+                                className="w-full my-1 text-xs bg-blue-500 text-white" // text-xs
+                                onClick={() => setIsOpen(false)}
+                                role="menuitem"
+                                tabIndex={isOpen ? 0 : -1}
+                            >
+                                ログイン (未実装)
+                            </Button>
                         </Link>
                     </div>
                 </nav>

@@ -96,15 +96,17 @@ const ExamResultComponent = ({ categoryId }: ExamResultComponentProps) => {
                                     onClick={() => handleQuestionClick(index)}
                                     className={cn(
                                         "flex items-center justify-center p-1 rounded border aspect-square text-xs sm:text-sm font-medium",
-                                        "hover:ring-2 hover:ring-offset-1 hover:ring-indigo-400 transition-all",
-                                        !isAnswered ? "bg-gray-100 text-gray-500 border-gray-200" : // 未回答
-                                            isCorrect ? "bg-green-100 text-green-800 border-green-200 hover:bg-green-200" : // 正解
-                                                "bg-red-100 text-red-800 border-red-200 hover:bg-red-200" // 不正解
+                                        // ★ hover:ring-primary に変更
+                                        "hover:ring-2 hover:ring-offset-1 hover:ring-primary/80 dark:hover:ring-offset-background transition-all",
+                                        // ★ 状態に応じたテーマ対応の色に変更
+                                        !isAnswered
+                                            ? "bg-muted text-muted-foreground border-border" // 未回答
+                                            : isCorrect
+                                                ? "bg-green-500/40 text-green-700 dark:text-green-400 border-green-500/20 hover:bg-green-500/20 dark:bg-green-500/30 dark:border-green-500/30 dark:hover:bg-green-500/25" // 正解
+                                                : "bg-red-500/40 text-red-700 dark:text-red-400 border-red-500/20 hover:bg-red-500/20 dark:bg-red-500/40 dark:border-red-500/30 dark:hover:bg-red-500/25" // 不正解
                                     )}
                                     title={`問題 ${question.id} を見る`}
                                 >
-                                    {/* 正誤アイコン (任意) */}
-                                    {/* {isAnswered && (isCorrect ? <Check size={12} /> : <X size={12} />)} */}
                                     {question.id} {/* 問題番号 */}
                                 </button>
                             );
@@ -140,7 +142,7 @@ const ExamResultComponent = ({ categoryId }: ExamResultComponentProps) => {
                                 // ★ onAnswer 等は不要なのでダミー関数を渡す
                                 onAnswer={() => { }}
                                 onFlagToggle={() => { }}
-                            // onConfirmAnswer は渡さない
+
                             />
                         )}
                     </div>

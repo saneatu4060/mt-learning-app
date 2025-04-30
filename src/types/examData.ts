@@ -6,7 +6,6 @@ export interface Question {
     multipleAnswers: boolean; // 複数回答か否か
     image?: { // 問題文に付随する画像 (任意)
         url: string; // 画像パス (旧 isImageUrl)
-        caption?: string; // キャプション
     };
 }
 

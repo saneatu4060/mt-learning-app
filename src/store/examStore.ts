@@ -1,15 +1,6 @@
 import { create } from 'zustand';
 
-interface Question {
-    id: number;
-    text: string;
-    options: string[];
-    correctAnswers: number[];
-    multipleAnswers: boolean;
-    image?: {           // ← image オブジェクトを追加 (オプショナル)
-        url: string;
-    };
-}
+import { Question } from '@/types/examData';
 
 // 配列比較ヘルパー関数 (以前と同じ)
 const compareAnswers = (arr1: number[], arr2: number[]): boolean => {
