@@ -2687,7 +2687,7 @@ const questiondata_snippet: { [key: number]: { id: number, text: string, options
         },
         {
             "id": 63,
-            "text": "末ù血液像(別冊No. 8)を別に示す。考えられるのはどれか。",
+            "text": "末梢血液像(別冊No. 8)を別に示す。考えられるのはどれか。",
             "options": [
                 "寒冷凝集素症",
                 "遺伝性楕円赤血球症",
@@ -3163,7 +3163,7 @@ const questiondata_snippet: { [key: number]: { id: number, text: string, options
             "options": [
                 "電離放射線 --- 皮膚潰瘍",
                 "赤外線 --- 緑内障",
-                "振   動 --- 末ù循環障害",
+                "振   動 --- 末梢循環障害",
                 "騒   音 --- 難   聴",
                 "気   圧 --- 潜函病"
             ],
