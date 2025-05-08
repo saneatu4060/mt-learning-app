@@ -44,6 +44,7 @@ const categorydata: { id: number; name: string; uri: string; am: number; pm: num
 
 // questiondata (第58回 AM=1, PM=2 のみ提供されたデータ)
 const questiondata_snippet: { [key: number]: { id: number, text: string, options: string[], correctAnswers: number[], multipleAnswers: boolean, isImageUrl: string }[] } = {
+    // 58th AM
     1: [
         {
             "id": 1,
@@ -1669,6 +1670,7 @@ const questiondata_snippet: { [key: number]: { id: number, text: string, options
             "isImageUrl": ""
         }
     ],
+    // 58th PM
     2: [
         {
             "id": 1,
@@ -3303,7 +3305,3221 @@ const questiondata_snippet: { [key: number]: { id: number, text: string, options
             "multipleAnswers": false,
             "isImageUrl": ""
         }
-    ]
+    ],
+    // 59th AM
+    3: [
+        {
+            "id": 1,
+            "text": "OTC<over the counter>検査として実施されるのはどれか。**2つ選べ。**",
+            "options": [
+                "尿   糖",
+                "妊娠反応",
+                "ABO 血液型",
+                "インフルエンザ",
+                "動脈血酸素分圧"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 2,
+            "text": "EDTA 加血漿で測定すると低値を示すのはどれか。",
+            "options": [
+                "尿   酸",
+                "カルシウム",
+                "クレアチニン",
+                "コレステロール",
+                "コリンエステラーゼ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 3,
+            "text": "測定値の精密さの許容誤差限界について**誤っている**のはどれか。",
+            "options": [
+                "技能試験は検査室の認定である。",
+                "健常者の個体間生理的変動から求める。",
+                "医学的有用性は臨床医の経験から求める。",
+                "技術水準は外部精度管理調査によって決める。",
+                "Tonks の許容誤差限界では基準範囲が広い項目は許容限界が大きい。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 4,
+            "text": "x-R 管理図法で**管理できない**のはどれか。",
+            "options": [
+                "正確度",
+                "日間誤差",
+                "シフト現象",
+                "試薬の劣化",
+                "トレンド現象"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 5,
+            "text": "男性より女性で高値を示す血清成分はどれか。",
+            "options": [
+                "CK",
+                "γ-GT",
+                "尿    酸",
+                "血清鉄",
+                "HDL-コレステロール"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 6,
+            "text": "尿試験紙法の項目でアスコルビン酸の服用により偽陰性を示すのはどれか。**2つ選べ。**",
+            "options": [
+                "蛋    白",
+                "ブドウ糖",
+                "ケトン体",
+                "潜血反応",
+                "白血球反応"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 7,
+            "text": "尿沈渣の無染色、強拡大標本(別冊No. 1)を別に示す。 この結晶を溶解するのはどれか。",
+            "options": [
+                "希塩酸",
+                "アセトン",
+                "アンモニア",
+                "クロロホルム",
+                "アルコール・エーテル混合液"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-000.png"
+        },
+        {
+            "id": 8,
+            "text": "幼虫移行症を起こすのはどれか。",
+            "options": [
+                "鞭   虫",
+                "肝吸虫",
+                "糞線虫",
+                "小形条虫",
+                "広東住血線虫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 9,
+            "text": "検便で検出された虫卵の写真(別冊No. 2)を別に示す。 考えられるのはどれか。",
+            "options": [
+                "ウエステルマン肺吸虫",
+                "マンソン住血吸虫",
+                "有害異形吸虫",
+                "肝吸虫",
+                "肝   蛭"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-001.png"
+        },
+        {
+            "id": 10,
+            "text": "三日熱マラリア患者の末梢血塗抹 Wright-Giemsa 染色標本(別冊No. 3)を別に示す。 正しいのはどれか。",
+            "options": [
+                "輪状体",
+                "分裂体",
+                "アメーバ体",
+                "雌性生殖母体",
+                "雄性生殖母体"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-002.png"
+        },
+        {
+            "id": 11,
+            "text": "成人に対する胸骨圧迫について正しいのはどれか。",
+            "options": [
+                "胸骨上部で行う。",
+                "1分間に 60 回行う。",
+                "柔らかい敷物の上で行う。",
+                "片手で脈を確認しながら行う。",
+                "人工呼吸2回に対し胸骨圧迫 30 回のペースで行う。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 12,
+            "text": "胃にみられる寄生虫はどれか。",
+            "options": [
+                "鞭   虫",
+                "横川吸虫",
+                "アニサキス",
+                "有棘顎口虫",
+                "ランブル鞭毛虫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 13,
+            "text": "急激な頭痛で発症するのはどれか。",
+            "options": [
+                "脳血栓",
+                "脳塞栓",
+                "脳内出血",
+                "くも膜下出血",
+                "一過性脳虚血発作"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 14,
+            "text": "ADH 分泌刺激試験はどれか。",
+            "options": [
+                "水制限試験",
+                "ACTH 試験",
+                "メチラポン試験",
+                "ブドウ糖負荷試験",
+                "デキサメサゾン試験"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 15,
+            "text": "免疫グロブリンが単クローン性に増加する疾患はどれか。",
+            "options": [
+                "肝硬変",
+                "敗血症",
+                "関節リウマチ",
+                "Guillain-Barré 症候群",
+                "原発性マクログロブリン血症"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 16,
+            "text": "循環機能で正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "心筋の興奮は全か無かの法則に従う。",
+                "分時拍出量は心拍数と最大血圧で表す。",
+                "脈波の伝わる速さは血流と同じである。",
+                "健常者の心臓拍動の歩調取りは房室結節である。",
+                "心音のⅠ音とⅡ音の間は収縮期である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 17,
+            "text": "次の文により 17、18 の問いに答えよ。心電図(別冊No. 4)を別に示す。 最も近い心拍数はどれか。",
+            "options": [
+                "20〜 30",
+                "40〜 50",
+                "60〜 70",
+                "80〜 90",
+                "100〜110"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-003.png"
+        },
+        {
+            "id": 18,
+            "text": "所見はどれか。",
+            "options": [
+                "PQ 短縮",
+                "QT 延長",
+                "右房負荷",
+                "右脚ブロック",
+                "Ⅱ度房室ブロック"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 19,
+            "text": "健常成人の呼吸器の構造と機能について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "細気管支壁には気管支軟骨が存在する。",
+                "肺胞でのガス交換は拡散により行われる。",
+                "機能的残気量<FRC>は仰臥位では立位よりも上昇する。",
+                "動脈血二酸化炭素分圧<PaCO2>は肺胞換気量に反比例する。",
+                "座位において肺胞の換気血流比は肺尖部よりも肺底部の方が高い。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 20,
+            "text": "肺気量分画の図(別冊No. 5)を別に示す。各肺気量分画の名称で正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "①：最大吸気量<inspiratory capacity：IC>",
+                "②：1回換気量<tidal volume：VT>",
+                "③：肺胞換気量<alveolar ventilation volume：VA>",
+                "④：機能的残気量<functional residual capacity：FRC>",
+                "⑤：全肺気量<total lung capacity：TLC>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": "/am59/am-image-004.png"
+        },
+        {
+            "id": 21,
+            "text": "動脈血ガス分析の結果とその解釈の組合せで正しいのはどれか。**2つ選べ。** \npH PaO2  PaCO2  HCO3-",
+            "options": [
+                "7.40   91   42  22 --- 正常範囲",
+                "7.55   99   31  20 --- 代謝性アルカローシス",
+                "7.20   48   78  25 --- 呼吸性アシドーシス",
+                "7.48   78   48  40 --- 呼吸性アルカローシス",
+                "7.39   68   64  38 --- 代謝性アシドーシス"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 22,
+            "text": "睡眠時無呼吸症候群について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "脳波上の覚醒回数は重症度と関係がない。",
+                "non REM 睡眠時には急速眼球運動がみられる。",
+                "無呼吸出現時には動脈血酸素飽和度が低下する。",
+                "閉塞型睡眠時無呼吸では胸壁と腹壁の奇異性運動がみられる。",
+                "non REM 睡眠における睡眠ステージ1はステージ3よりも深い睡眠である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 23,
+            "text": "感覚情報が最初に伝わる部位の組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "視   覚 --- 前頭葉",
+                "嗅   覚 --- 後頭葉",
+                "味   覚 --- 後頭葉",
+                "聴   覚 --- 側頭葉",
+                "体性感覚 --- 頭頂葉"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 24,
+            "text": "死判定の脳波記録時にすべきなのはどれか。",
+            "options": [
+                "アースを接地しない。",
+                "記録中には刺激をしない。",
+                "オトガイに電極をつける。",
+                "測定感度を4倍以上に上げる。",
+                "フィルタをすべてオフにする。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 25,
+            "text": "脳波所見と疾患の組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "三相性波 --- Creutzfeldt-Jakob 病",
+                "多棘徐波複合 --- ミオクロニーてんかん",
+                "3Hz 棘徐波複合 --- 欠神発作型てんかん",
+                "ヒプスアリスミア --- Lennox 症候群",
+                "周期性同期性放電 --- Alzheimer 病"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 26,
+            "text": "超音波の周波数を高くしたときに起こる変化として正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "透過性は高くなる。",
+                "指向性は良くなる。",
+                "分解能は高くなる。",
+                "減衰は小さくなる。",
+                "伝播速度は低下する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 27,
+            "text": "心臓超音波所見で健常者に**みられない**のはどれか。",
+            "options": [
+                "駆出率 72 %",
+                "左房径 54 mm",
+                "大動脈径 25 mm",
+                "心室中隔厚 10 mm",
+                "左室拡張末期径 49 mm"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 28,
+            "text": "脂肪肝の超音波所見はどれか。**2つ選べ。**",
+            "options": [
+                "高輝度肝",
+                "肝表面凹凸",
+                "後方エコー増強",
+                "モザイクパターン",
+                "肝腎コントラスト陽性"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 29,
+            "text": "細胞小器官と機能の組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "ミトコンドリア --- 蛋白質合成",
+                "粗面小胞体 --- ATP 産生",
+                "リソソーム --- 物質の消化",
+                "ゴルジ体 --- 物質の酸化",
+                "核 --- mRNA 合成"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 30,
+            "text": "Lambert-Beer の法則が成り立つ条件で、吸光度 1.0 における透過率は吸光度 2.0 における透過率の何倍か。",
+            "options": [
+                "2 倍",
+                "4 倍",
+                "5 倍",
+                "10 倍",
+                "20 倍"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 31,
+            "text": "アニオンギャップが増加するのはどれか。**2つ選べ。**",
+            "options": [
+                "下     痢",
+                "腎不全",
+                "慢性肺気腫",
+                "低アルブミン血症",
+                "糖尿病性ケトアシドーシス"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 32,
+            "text": "血清中の Na：145 mmol/l、血糖値：90 mg/dl、尿素窒素：14 mg/dl のとき、血清浸透圧0mOsm/kg・H2O2の数値に最も近いのはどれか。",
+            "options": [
+                "160",
+                "220",
+                "280",
+                "340",
+                "400"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 33,
+            "text": "最も長期間の血糖コントロールの状態を反映するのはどれか。",
+            "options": [
+                "HbA1c",
+                "インスリン",
+                "C-ペプチド",
+                "グリコアルブミン",
+                "1，5-アンヒドログルシトール"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 34,
+            "text": "脂肪酸について正しいのはどれか。",
+            "options": [
+                "胆汁酸の材料として使われる。",
+                "空腹時に脂肪組織に取り込まれる。",
+                "血中では長鎖脂肪酸より中鎖脂肪酸が多い。",
+                "遊離型コレステロールに結合して親水性を増す。",
+                "不飽和脂肪酸の方が飽和脂肪酸より酸化されやすい。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 35,
+            "text": "アミノ酸について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "グリシンは塩基性アミノ酸である。",
+                "アスパラギンは酸性アミノ酸である。",
+                "バリンは必須アミノ酸のひとつである。",
+                "トリプトファンはインドール核をもつ。",
+                "チロシンは加水分解されてオルニチンと尿素を生じる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 36,
+            "text": "血清クレアチニンについて正しいのはどれか。",
+            "options": [
+                "脱水で低下する。",
+                "妊娠で上昇する。",
+                "肝臓で合成される。",
+                "透析前後で変化しない。",
+                "女性より男性で高値を示す。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 37,
+            "text": "非抱合型ビリルビンが優位に上昇するのはどれか。",
+            "options": [
+                "新生児黄疸",
+                "閉塞性黄疸",
+                "薬剤性肝障害",
+                "急性ウイルス性肝炎",
+                "Dubin-Johnson 症候群"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 38,
+            "text": "ヒトの血中アミラーゼについて正しいのはどれか。",
+            "options": [
+                "膵臓でのみ産生される。",
+                "腎糸球体で濾過される。",
+                "血中半減期は約 24 時間である。",
+                "α-1，6-グルコシド結合を切断する。",
+                "活性中心に亜鉛イオンを含有する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 39,
+            "text": "酵素について正しいのはどれか。",
+            "options": [
+                "γ-GT は肝の逸脱酵素である。",
+                "ALP は Mg2袷 で賦活化される。",
+                "リパーゼは酸化還元酵素である。",
+                "ALT はピリドキサルリン酸により阻害される。",
+                "LD アイソザイムのうち、-20 ℃保存では LD1 が最も失活しやすい。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 40,
+            "text": "血中薬物モニタリング<TDM>を**行わない**のはどれか。",
+            "options": [
+                "ジゴキシン",
+                "テオフィリン",
+                "プレドニゾロン",
+                "バンコマイシン",
+                "フェノバルビタール"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 41,
+            "text": "視床下部によって分泌が直接調節されるホルモンはどれか。",
+            "options": [
+                "エストロゲン",
+                "カルシトニン",
+                "コルチゾール",
+                "サイロキシン",
+                "成長ホルモン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 42,
+            "text": "Basedow 病による甲状腺機能亢進症において低下するのはどれか。",
+            "options": [
+                "T3",
+                "FT4",
+                "TSH",
+                "ALP",
+                "サイログロブリン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 43,
+            "text": "核酸を構成するプリン塩基はどれか。**2つ選べ。**",
+            "options": [
+                "チミン",
+                "アデニン",
+                "ウラシル",
+                "グアニン",
+                "シトシン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 44,
+            "text": "尿素呼気試験に使用される安定同位体はどれか。",
+            "options": [
+                "3H",
+                "13C",
+                "15N",
+                "32P",
+                "131I"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 45,
+            "text": "H-E 染色標本(別冊No. 6)を別に示す。この臓器はどれか。",
+            "options": [
+                "皮      膚",
+                "胃",
+                "気      管",
+                "膀      胱",
+                "子宮頸部"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-005.png"
+        },
+        {
+            "id": 46,
+            "text": "腫瘍と免疫組織化学的マーカーの組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "肝細胞癌 --- c-kit",
+                "絨毛癌 --- hCG",
+                "消化管間質腫瘍<GIST> --- AFP",
+                "前立腺癌 --- CA19-9",
+                "大腸癌 --- CEA"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 47,
+            "text": "Ⅱ 型アレルギー反応はどれか。**2つ選べ。**",
+            "options": [
+                "Goodpasture 症候群",
+                "関節リウマチ",
+                "気管支喘息",
+                "重症筋無力症",
+                "全身性エリテマトーデス<SLE>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 48,
+            "text": "急性炎症初期で主体となる細胞はどれか。",
+            "options": [
+                "組織球",
+                "好中球",
+                "好酸球",
+                "好塩基球",
+                "リンパ球"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 49,
+            "text": "成人に好発する腫瘍はどれか。",
+            "options": [
+                "膠芽腫",
+                "髄芽腫",
+                "肝芽腫",
+                "腎芽腫",
+                "神経芽腫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 50,
+            "text": "腎臓について**誤っている**のはどれか。",
+            "options": [
+                "右腎は左腎より低い位置にある。",
+                "実質は皮質と髄質に区別される。",
+                "腎門部には腎動静脈が出入りする。",
+                "傍糸球体装置は尿管極に位置する。",
+                "尿細管上皮には微絨毛が発達している。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 51,
+            "text": "脱灰後、水洗せず 70 % アルコールに入れるのはどれか。**2つ選べ。**",
+            "options": [
+                "EDTA法",
+                "ギ酸法",
+                "トリクロロ酢酸法",
+                "硝酸法",
+                "迅速脱灰法<Plank-Rychlo 法>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 52,
+            "text": "H-E 染色標本(別冊No. 7)を別に示す。 標本が不良な原因はどれか。",
+            "options": [
+                "脱灰過剰",
+                "脱水不足",
+                "薄切時の室温不適",
+                "ブロックの固定不備",
+                "パラフィン浸透の不足"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-006.png"
+        },
+        {
+            "id": 53,
+            "text": "腎組織標本(別冊No. 8)を別に示す。 染色法はどれか。",
+            "options": [
+                "elastica van Gieson 染色",
+                "Masson trichrome 染色",
+                "PAM 染色",
+                "PAS 染色",
+                "PTAH 染色"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-007.png"
+        },
+        {
+            "id": 54,
+            "text": "硝酸銀を使用するのはどれか。**2つ選べ。**",
+            "options": [
+                "Bodian 染色",
+                "elastica van Gieson 染色",
+                "Grimelius 染色",
+                "Grocott 染色",
+                "Masson trichrome 染色"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 55,
+            "text": "免疫組織化学染色法について**誤っている**のはどれか。",
+            "options": [
+                "洗浄には生理食塩液を用いる。",
+                "オートクレーブは抗原賦活化に用いられる。",
+                "ABC 法はアビジンとビオチンとの親和性を利用する。",
+                "3,3 ʼ-diaminobenzidine<DAB>反応は茶褐色の陽性像を示す。",
+                "過酸化水素水は内因性ペルオキシダーゼの抑制に用いられる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 56,
+            "text": "透過型電子顕微鏡試料作製で**使用しない**のはどれか。",
+            "options": [
+                "エタノール",
+                "オスミウム酸",
+                "クロロホルム",
+                "グルタールアルデヒド",
+                "プロピレンオキサイド"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 57,
+            "text": "病理解剖における臨床検査技師の業務**でない**のはどれか。",
+            "options": [
+                "肉眼所見の記載",
+                "臓器の重量測定",
+                "肉眼臓器の写真撮影",
+                "顕微鏡標本の作製",
+                "遺族への説明"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 58,
+            "text": "特定化学物質に分類されるのはどれか。",
+            "options": [
+                "アセトン",
+                "キシレン",
+                "メタノール",
+                "エタノール",
+                "ホルムアルデヒド"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 59,
+            "text": "健常成人で造血能が最も低い部位はどれか。",
+            "options": [
+                "胸   骨",
+                "脛   骨",
+                "腸   骨",
+                "椎   骨",
+                "頭蓋骨"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 60,
+            "text": "血栓形成を抑制するのはどれか。**2つ選べ。**",
+            "options": [
+                "ADP",
+                "コラーゲン",
+                "アンチトロンビン",
+                "プロスタサイクリン",
+                "プラスミノゲンアクチベータインヒビター-1<PAI-1>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 61,
+            "text": "検査結果と疾患の組合せで**誤っている**のはどれか。",
+            "options": [
+                "MCV 低値、網赤血球数減少 --- 慢性炎症性疾患",
+                "MCV 正常、網赤血球数減少 --- 腎性貧血",
+                "MCV 正常、網赤血球数増加 --- 溶血性貧血",
+                "MCV 高値、網赤血球数減少 --- 巨赤芽球性貧血",
+                "MCV 高値、網赤血球数増加 --- 再生不良性貧血"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 62,
+            "text": "骨髄穿刺液検査結果で異常値はどれか。",
+            "options": [
+                "有核細胞数  12.8 万/μl",
+                "巨核球数  95/μl",
+                "M-E 比  2.4",
+                "骨髄芽球比率  0.5 %",
+                "肥満細胞比率  5%"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 63,
+            "text": "プロトロンビン時間<PT>正常、活性化部分トロンボプラスチン時間<APTT>延長を呈するのはどれか。",
+            "options": [
+                "血友病 B",
+                "ワルファリン服用",
+                "凝固第Ⅶ因子欠損症",
+                "無フィブリノゲン血症",
+                "特発性血小板減少性紫斑病"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 64,
+            "text": "32 歳の男性。深部静脈血栓症と肺塞栓症で入院した。妹も肺塞栓症の既往がある。 検査が必要なのはどれか。",
+            "options": [
+                "プラスミノゲン",
+                "アンチトロンビン",
+                "第Ⅷ因子インヒビター",
+                "可溶性トロンボモジュリン",
+                "von Willebrand 因子<VWF>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 65,
+            "text": "好中球の核の過分葉がみられるのはどれか。",
+            "options": [
+                "悪性貧血",
+                "再生不良性貧血",
+                "腎性貧血",
+                "赤芽球癆",
+                "鉄欠乏性貧血"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 66,
+            "text": "34 歳の男性。末梢血の普通染色標本(別冊No. 9)を別に示す。 矢印で示す血球を多く認めることから、検査結果として考えられるのはどれか。",
+            "options": [
+                "白血球数偽低値",
+                "白血球数偽高値",
+                "血小板数偽低値",
+                "血小板数偽高値",
+                "破砕赤血球出現"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-008.png"
+        },
+        {
+            "id": 67,
+            "text": "骨髄細胞の染色体核型(別冊No. 10)を別に示す。 矢印で示す異常を認めるのはどれか。",
+            "options": [
+                "真性多血症",
+                "骨髄線維症",
+                "多発性骨髄腫",
+                "骨髄異形成症候群",
+                "慢性骨髄性白血病"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-009.png"
+        },
+        {
+            "id": 68,
+            "text": "次の文により 68、69 の問いに答えよ。\nTSI 培地と SIM 培地にグラム陰性桿菌を接種して1日後の写真(別冊No. 11)を別に示す。 陽性の性状はどれか。",
+            "options": [
+                "運動性",
+                "ガス産生",
+                "ブドウ糖分解",
+                "硫化水素産生",
+                "インドールピルビン酸産生"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-010.png"
+        },
+        {
+            "id": 69,
+            "text": "考えられる菌種はどれか。",
+            "options": [
+                "Citrobacter freundii",
+                "Klebsiella pneumoniae",
+                "Proteus vulgaris",
+                "Serratia marcescens",
+                "Shigella dysenteriae"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-010.png"
+        },
+        {
+            "id": 70,
+            "text": "内毒素<endotoxin>活性の主成分となっている菌体の部位はどれか。",
+            "options": [
+                "外    膜",
+                "細胞質",
+                "核様体",
+                "細胞質膜",
+                "ペプチドグリカン層"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 71,
+            "text": "細菌の形態と染色法の組合せで正しいのはどれか。",
+            "options": [
+                "異染小体 --- Leifson 法",
+                "芽    胞 --- Wirtz 法",
+                "莢    膜 --- Grocott 染色",
+                "抗酸菌 --- Neisser 染色",
+                "鞭    毛 --- Hiss 法"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 72,
+            "text": "衛星現象がみられるのはどれか。",
+            "options": [
+                "Bordetella pertussis",
+                "Haemophilus influenzae",
+                "Legionella pneumophila",
+                "Pseudomonas aeruginosa",
+                "Streptococcus pneumoniae"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 73,
+            "text": "プラスミドで**誤っている**のはどれか。",
+            "options": [
+                "核内で複製する。",
+                "環状の DNA である。",
+                "接合によって伝達する。",
+                "耐性因子の1つである。",
+                "染色体から独立した遺伝体である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 74,
+            "text": "剤感受性検査に使用するのはどれか。",
+            "options": [
+                "普通寒天培地",
+                "トリプティケースソイ寒天培地",
+                "ハートインフュージョン寒天培地",
+                "ブレインハートインフュージョン寒天培地",
+                "Mueller-Hinton 寒天培地"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 75,
+            "text": "細菌増殖において DNA 複製を阻害する抗菌薬はどれか。",
+            "options": [
+                "アンピシリン",
+                "ミノサイクリン",
+                "ゲンタマイシン",
+                "エリスロマイシン",
+                "シプロフロキサシン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 76,
+            "text": "カルバペネム系抗菌薬が有効なのはどれか。",
+            "options": [
+                "多剤耐性結核菌",
+                "多剤耐性緑膿菌",
+                "バンコマイシン耐性腸球菌",
+                "メチシリン耐性黄色ブドウ球菌",
+                "基質拡張型 β ラクタマーゼ産生大腸菌"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 77,
+            "text": "流行性角結膜炎の主な感染経路はどれか。",
+            "options": [
+                "空気感染",
+                "経口感染",
+                "血液感染",
+                "接触感染",
+                "飛沫感染"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 78,
+            "text": "ウイルス感染症はどれか。**2つ選べ。**",
+            "options": [
+                "結   核",
+                "麻   疹",
+                "ペスト",
+                "ジフテリア",
+                "急性灰白髄炎<ポリオ>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 79,
+            "text": "ヘルパー T 細胞について**誤っている**のはどれか。",
+            "options": [
+                "CD4が陽性である。",
+                "Th1と Th2がある。",
+                "細胞性免疫に関与する。",
+                "MHC クラスⅠ抗原と反応する。",
+                "インターロイキン2を産生する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 80,
+            "text": "抗原についての組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "完全抗原 --- カルジオリピン",
+                "自己抗原 --- HLA",
+                "同種抗原 --- Gm",
+                "細胞質抗原 --- ミトコンドリア",
+                "不完全抗原 --- 蛋    白"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 81,
+            "text": "血清中の濃度が最も高い補体成分はどれか。",
+            "options": [
+                "C1",
+                "C2",
+                "C3",
+                "C4",
+                "C5"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 82,
+            "text": "測定法と標識物質の組合せで**誤っている**のはどれか。",
+            "options": [
+                "蛍光抗体法 --- アルカリホスファターゼ",
+                "酵素免疫測定法 --- ペルオキシダーゼ",
+                "放射免疫測定法 --- I125",
+                "化学発光免疫測定法 --- ルミノール",
+                "生物発光免疫測定法 --- ルシフェラーゼ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 83,
+            "text": "ウイルス性肝炎について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "A 型肝炎の発症初期には IgG 型 HA 抗体測定が有効である。",
+                "B 型肝炎ウイルスは DNA ウイルスである。",
+                "C 型肝炎ウイルス抗体は中和抗体である。",
+                "D 型肝炎ウイルスは C 型肝炎ウイルスと重複感染する。",
+                "E 型肝炎ウイルスは糞便中に検出される。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 84,
+            "text": "関節リウマチの診断に有用な自己抗体はどれか。**2つ選べ。**",
+            "options": [
+                "抗基底膜抗体",
+                "リウマトイド因子",
+                "抗サイログロブリン抗体",
+                "抗アセチルコリンレセプター抗体",
+                "抗環状シトルリン化ペプチド<CCP>抗体"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 85,
+            "text": "CRP について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "腎臓で産生される。",
+                "急性相反応物質である。",
+                "肺炎球菌に対する抗体である。",
+                "ラテックス凝集法により測定される。",
+                "電気泳動で α1 -グロブリン分画に含まれる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 86,
+            "text": "クリオグロブリンについて**誤っている**のはどれか。",
+            "options": [
+                "4℃保存で白濁する。",
+                "M 蛋白型が存在する。",
+                "免疫複合体を形成する。",
+                "37 ℃加温でゲル化する。",
+                "C 型肝炎患者で陽性率が高い。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 87,
+            "text": "モノクローナル抗体で正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "交差反応が多い。",
+                "血液型検査には用いられない。",
+                "IgG のサブクラスは同一である。",
+                "1つの抗原エピトープに対する抗体である。",
+                "B リンパ球と T リンパ球とのハイブリドーマから作製する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 88,
+            "text": "抗グロブリン試験の精度管理に用いるのはどれか。",
+            "options": [
+                "患者赤血球",
+                "パネル赤血球",
+                "IgG 感作赤血球",
+                "補体感作赤血球",
+                "酵素処理赤血球"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 89,
+            "text": "ABO 血液型の反応(別冊No. 12)を別に示す。考えられるのはどれか。",
+            "options": [
+                "アルブミン高値",
+                "不規則抗体陽性",
+                "γ-グロブリン低値",
+                "抗血漿蛋白抗体陽性",
+                "後天的な ABO 抗原減弱"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/am59/am-image-011.png"
+        },
+        {
+            "id": 90,
+            "text": "チーム医療と臨床検査技師の係わり事例との組合せで**適切でない**のはどれか。",
+            "options": [
+                "栄養サポートチーム --- 検査データからみた栄養状態の評価",
+                "化学療法チーム --- 抗悪性腫瘍薬の効用についての情報提供",
+                "感染制御チーム --- 耐性菌や薬剤耐性の調査、報告",
+                "褥瘡対策チーム --- 創傷からの細菌培養結果のモニタリング",
+                "糖尿病療養チーム --- 自己血糖測定器についての指導"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 91,
+            "text": "患者調査で得られるのはどれか。**2つ選べ。**",
+            "options": [
+                "受療率",
+                "通院者率",
+                "有訴者率",
+                "国民医療費",
+                "平均在院日数"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 92,
+            "text": "エビデンスレベルが最も高い疫学研究方法はどれか。",
+            "options": [
+                "横断研究",
+                "コホート研究",
+                "症例対照研究",
+                "生態学的研究",
+                "無作為比較対照試験"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 93,
+            "text": "大気中のフロンガスの増加と**関連しない**のはどれか。",
+            "options": [
+                "オゾン層破壊",
+                "感染症拡大",
+                "酸性雨増加",
+                "白内障増加",
+                "皮膚がん増加"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 94,
+            "text": "2009 年末現在の HIV 感染者数が最も多い地域はどれか。",
+            "options": [
+                "北アメリカ",
+                "南アメリカ",
+                "北アフリカ・中東",
+                "サハラ以南アフリカ",
+                "南アジア・東南アジア"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 95,
+            "text": "生体組織がもつ特異的な性質はどれか。**2つ選べ。**",
+            "options": [
+                "異方性",
+                "整合性",
+                "耐久性",
+                "非毒性",
+                "温度依存性"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 96,
+            "text": "入力電圧 10 mV を増幅して出力電圧1V を得た。 この増幅器の利得[dB]はどれか。",
+            "options": [
+                "10",
+                "20",
+                "40",
+                "80",
+                "100"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 97,
+            "text": "音響トランスデューサはどれか。",
+            "options": [
+                "圧電素子",
+                "ホール素子",
+                "サーミスタ",
+                "差動トランス",
+                "ストレンゲージ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 98,
+            "text": "CF 形装着部を表す医用電気機器の図記号はどれか。",
+            "options": [
+                "/am59/am-image-101.png",
+                "/am59/am-image-102.png",
+                "/am59/am-image-103.png",
+                "/am59/am-image-104.png",
+                "/am59/am-image-105.png"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 99,
+            "text": "コンピュータプログラムに潜む誤りを意味する用語はどれか。",
+            "options": [
+                "バ   グ",
+                "デバッグ",
+                "フリーズ",
+                "クラッシュ",
+                "フォーマット"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 100,
+            "text": "光学顕微鏡について**誤っている**のはどれか。",
+            "options": [
+                "開口数が大きいほど分解能が優れている。",
+                "尿沈渣の観察はコンデンサを下げて行う。",
+                "像の明るさは対物レンズの開口数の2乗に比例する。",
+                "総合倍率は接眼レンズと対物レンズの倍率の積で表される。",
+                "実視野は接眼レンズの視野数と対物レンズの倍率の積で表される。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        }
+    ],
+    // 59th PM
+    4: [
+        {
+            "id": 1,
+            "text": "黄色のバイオハザードマークが貼付されている容器に廃棄するのはどれか。",
+            "options": [
+                "胸水が入った試験管",
+                "血液が入った採血管",
+                "血液が付着したガーゼ",
+                "使用済みの骨髄穿刺針",
+                "圧迫止血に用いた酒精綿"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 2,
+            "text": "24 時間室温に放置した血清で測定結果が変わらないのはどれか。**2つ選べ**。",
+            "options": [
+                "CK",
+                "尿素窒素",
+                "アルブミン",
+                "アンモニア",
+                "酸ホスファターゼ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 3,
+            "text": "内部精度管理法で管理血清を用いるのはどれか。**2つ選べ**。",
+            "options": [
+                "累積和法",
+                "x -R 管理図法",
+                "項目間チェック法",
+                "デルタチェック法",
+                "ナンバープラス法"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 4,
+            "text": "正確度の管理法はどれか。**2つ選べ**。",
+            "options": [
+                "標準法との比較",
+                "管理血清の測定",
+                "重複再現性の比較",
+                "日差再現性の比較",
+                "標準血清による検定"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 5,
+            "text": "次の検査結果でパニック値はどれか。",
+            "options": [
+                "血糖   250 mg/dl",
+                "血清 K   5.0 mmol/l",
+                "血清 Na   147 mmol/l",
+                "血清 ALT   200 U/l",
+                "動脈血酸素分圧<PaO2>   45 torr"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 6,
+            "text": "磁気共鳴画像検査<MRI>で胆管を描出した際に得られた画像(別冊No. 1)を別に示す。 この患者の尿中に増加するのはどれか。",
+            "options": [
+                "蛋   白",
+                "亜硝酸塩",
+                "ビリルビン",
+                "ミオグロビン",
+                "ウロビリノゲン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-000.png"
+        },
+        {
+            "id": 7,
+            "text": "尿沈渣の無染色標本(別冊No. 2)を別に示す。 考えられる疾患はどれか。**2つ選べ**。",
+            "options": [
+                "膀胱癌",
+                "尿管結石",
+                "血管炎症候群",
+                "横紋筋融解症",
+                "慢性糸球体腎炎"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": "/pm59/pm-image-001.png"
+        },
+        {
+            "id": 8,
+            "text": "脳脊髄液中にみられた病原性微生物の染色標本(別冊No. 3)を別に示す。 この患者の髄液検査所見として考えられるのはどれか。",
+            "options": [
+                "髄液圧   85 mmH2O",
+                "細   胞   多形核白血球",
+                "蛋   白   135 mg/dl",
+                "糖   65 mg/dl",
+                "クロール   125 mmol/l"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-002.png"
+        },
+        {
+            "id": 9,
+            "text": "性行為感染症はどれか。",
+            "options": [
+                "サイクロスポーラ症",
+                "トリパノソーマ症",
+                "リーシュマニア症",
+                "トキソプラズマ症",
+                "赤痢アメーバ症"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 10,
+            "text": "野ネズミの耳道から多数の小形虫体(0.3〜0.5 mm)が確認された。虫体の写真(別冊No. 4)を別に示す。 関連する疾患はどれか。",
+            "options": [
+                "Q   熱",
+                "ペスト",
+                "マラリア",
+                "ライム病",
+                "ツツガムシ病"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-003.png"
+        },
+        {
+            "id": 11,
+            "text": "疾患と病原体の組合せで正しいのはどれか。",
+            "options": [
+                "梅   毒 --- リケッチア",
+                "淋   疾 --- スピロヘータ",
+                "オウム病 --- クラミジア",
+                "ツツガムシ病 --- ナイセリア",
+                "Weil 病 --- トレポネーマ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 12,
+            "text": "ペプチドホルモンはどれか。",
+            "options": [
+                "アドレナリン",
+                "コルチゾール",
+                "サイロキシン",
+                "テストステロン",
+                "副甲状腺ホルモン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 13,
+            "text": "メタボリックシンドロームの診断基準項目**でない**のはどれか。",
+            "options": [
+                "血   圧",
+                "血   糖",
+                "中性脂肪",
+                "HDL-コレステロール",
+                "LDL-コレステロール"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 14,
+            "text": "腎臓で産生されるのはどれか。",
+            "options": [
+                "レニン",
+                "グルカゴン",
+                "コルチゾール",
+                "バソプレッシン",
+                "アルドステロン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 15,
+            "text": "血液 pH の算出に必要なのはどれか。**2つ選べ。**",
+            "options": [
+                "Cl-",
+                "HCO3-",
+                "Na+",
+                "PaCO2",
+                "PaO2"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 16,
+            "text": "心拍数が減少するのはどれか。**2つ選べ。**",
+            "options": [
+                "歩       行",
+                "吸       気",
+                "眼球圧迫",
+                "神経興奮状態",
+                "頸動脈洞圧迫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 17,
+            "text": "最も緊急性が高い心電図所見はどれか。",
+            "options": [
+                "PQ 短縮",
+                "心房細動",
+                "心室細動",
+                "上室性期外収縮",
+                "Ⅲ度房室ブロック"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 18,
+            "text": "不整脈を訴える成人女性に心電図検査を実施した。心電図(別冊No. 5)を別に示す。 下線の所見はどれか。",
+            "options": [
+                "心房細動",
+                "心室細動",
+                "心室頻拍",
+                "房室ブロック",
+                "ペースメーカー調律"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-004.png"
+        },
+        {
+            "id": 19,
+            "text": "長時間の心電図記録が最も有効なのはどれか。",
+            "options": [
+                "異型狭心症",
+                "拡張型心筋症",
+                "動脈管開存症",
+                "大動脈弁狭窄症",
+                "心室中隔欠損症"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 20,
+            "text": "一回呼吸法による肺拡散能<DLCO>の検査で**誤っている**のはどれか。",
+            "options": [
+                "肺気腫では低下する。",
+                "肺高血圧症では上昇する。",
+                "吸入する混合ガスには微量の一酸化炭素<CO>が含まれる。",
+                "肺活量が1l 未満の被験者では測定値の信頼度が低下する。",
+                "混合ガス吸入後 10 秒間の息止めをさせ、一気に呼出させる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 21,
+            "text": "動脈血ガス分析において検体を室温に1時間放置した後に認められる数値の変動はどれか。 \n pH   PaO2(Torr)   PaCO2(Torr)",
+            "options": [
+                "上昇            上昇                   上昇",
+                "上昇            低下                   低下",
+                "不変            不変                   上昇",
+                "低下            低下                   上昇",
+                "不変            上昇                   不変"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 22,
+            "text": "78 歳の男性。息切れの悪化と意識障害とを認め入院した。室内気吸入時の動脈血ガス分析の結果を以下に示す。 pH 7.24, PaO 2 52 Torr, PaCO2 64 Torr, HCO3- 25 mEq/l入院     6か月前の安定期のフローボリューム曲線(別冊No. 6)を別に示す。 正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "炭酸ガス分圧は正常である。",
+                "代謝性アシドーシスの状態である。",
+                "このアシドーシスは代償が働いている。",
+                "フローボリューム曲線は下に凸である。",
+                "慢性閉塞性肺疾患の増悪が疑われる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": "/pm59/pm-image-005.png"
+        },
+        {
+            "id": 23,
+            "text": "体性感覚誘発脳波測定の際にインパルスが通過する部位はどれか。**2つ選べ。**",
+            "options": [
+                "前   根",
+                "側   索",
+                "黒   質",
+                "視   床",
+                "内   包"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 24,
+            "text": "前腕の手首(A 点)と肘(B 点)で正中神経を電気刺激した際に短母指外転筋から得られた複合筋活動電位(別冊No. 7)を別に示す。A 点と B 点の距離は 21 cm であった。 この神経の運動神経伝導速度(m/s)はどれか。",
+            "options": [
+                "46.5",
+                "48.2",
+                "50.0",
+                "52.6",
+                "55.3"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-006.png"
+        },
+        {
+            "id": 25,
+            "text": "経頭蓋磁気刺激検査と関係があるのはどれか。**2つ選べ。**",
+            "options": [
+                "渦電流",
+                "近赤外光",
+                "ラジオ波",
+                "超伝導磁石",
+                "円形コイル"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 26,
+            "text": "超音波検査で、狭窄部の圧較差をΔ P(mmHg)、最大流速を V(m/s)とすると、圧較差 Δ P を求めるための正しい式はどれか。",
+            "options": [
+                "Δ P = V2",
+                "Δ P = 2V2",
+                "Δ P = 3V2",
+                "Δ P = 4V2",
+                "Δ P = 5V2"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 27,
+            "text": "腹部超音波検査所見と疾患の組合せで正しいのはどれか。",
+            "options": [
+                "デブリ --- 肝囊胞",
+                "ハロー --- 胆石症",
+                "音響陰影 --- 肝腫瘍",
+                "多重エコー --- 急性胆囊炎",
+                "コメットエコー --- 胆囊腺筋腫症"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 28,
+            "text": "MRI において、T1 強調像で低信号、T2 強調像で高信号を示すのはどれか。",
+            "options": [
+                "肝   臓",
+                "膵   臓",
+                "腎   臓",
+                "膀   胱",
+                "大動脈"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 29,
+            "text": "検査値への影響で正しいのはどれか。",
+            "options": [
+                "遊離脂肪酸は食後に高値となる。",
+                "総蛋白は立位よりも臥位で高い。",
+                "カリウムは全血冷蔵保存で低値となる。",
+                "プロラクチンは睡眠中に最高値を示す。",
+                "クレアチンキナーゼ<CK>は運動後低下する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 30,
+            "text": "分子の大きさを分離分画の原理とするのはどれか。",
+            "options": [
+                "逆相クロマトグラフィ",
+                "疎水性クロマトグラフィ",
+                "ゲル濾過クロマトグラフィ",
+                "イオン交換クロマトグラフィ",
+                "アフィニティクロマトグラフィ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 31,
+            "text": "カルシウムについて正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "尿細管で再吸収されない。",
+                "ビタミン D を活性化する。",
+                "食事中のカルシウムは胃から吸収される。",
+                "骨ではリン酸カルシウムとして存在する。",
+                "血清カルシウムの約半分はイオン型である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 32,
+            "text": "TCA 回路で**生成されない**のはどれか。",
+            "options": [
+                "リンゴ酸",
+                "コハク酸",
+                "アセト酢酸",
+                "オキサロ酢酸",
+                "2-オキソグルタル酸"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 33,
+            "text": "直ちに糖尿病と診断できるのはどれか。",
+            "options": [
+                "空腹時血糖 120 mg/dl、HbA1c0NGSP27.0 %",
+                "空腹時血糖 140 mg/dl、HbA1c0NGSP26.7 %",
+                "随時血糖 190 mg/dl、HbA1c0NGSP27.2 %",
+                "随時血糖 210 mg/dl、HbA1c0NGSP26.0 %",
+                "75 g 経口ブドウ糖負荷試験2時間値 180 mg/dl、HbA1c(NGSP)6.6 %"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 34,
+            "text": "LDL-コレステロールについて正しいのはどれか。",
+            "options": [
+                "食後5時間たてば Friedewald の式を適用できる。",
+                "トリグリセリドに比べて日内変動が少ない。",
+                "甲状腺機能亢進症で高値を示す。",
+                "閉経後に徐々に低下する。",
+                "高値では血清が混濁する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 35,
+            "text": "血清中のトリグリセリドをグリセロール消去法とグリセロール非消去法の2法で測定したところ、測定値はそれぞれ 148 mg/dl、177 mg/dl であった。 この血清のグリセロール濃度に最も近いのはどれか。 ただし、オレイン酸およびグリセロールの分子量はそれぞれ 282、92 とする。",
+            "options": [
+                "3 mg/dl",
+                "5 mg/dl",
+                "9 mg/dl",
+                "17 mg/dl",
+                "29 mg/dl"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 36,
+            "text": "栄養評価蛋白として用いられる Rapid Turnover ProteinÝRTPàはどれか。઄つ選べ。",
+            "options": [
+                "ハプトグロビン",
+                "セルロプラスミン",
+                "トランスサイレチン",
+                "レチノール結合蛋白",
+                "α1 -アンチトリプシン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 37,
+            "text": "血清蛋白について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "アルブミンの半減期は3日である。",
+                "アルブミンは遊離脂肪酸を運搬する。",
+                "アルブミンとカルシウムは負の相関をする。",
+                "乳幼児の免疫グロブリン濃度は成人より高い。",
+                "免疫グロブリンは大部分が γ 分画に含まれる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 38,
+            "text": "Michaelis-Menten の式に従う酵素反応において、最大反応速度(Vmax)の 80 %となる基質濃度はミカエリス定数(Km)の何倍か。",
+            "options": [
+                "2 倍",
+                "4 倍",
+                "6 倍",
+                "8 倍",
+                "10 倍"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 39,
+            "text": "原発性副甲状腺機能亢進症の際に上昇するのはどれか。",
+            "options": [
+                "ALP",
+                "ALT",
+                "AST",
+                "LAP",
+                "γ-GT"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 40,
+            "text": "血清コリンエステラーゼ活性が低下するのはどれか。",
+            "options": [
+                "肥   満",
+                "肝硬変",
+                "糖尿病",
+                "高脂血症",
+                "ネフローゼ症候群"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 41,
+            "text": "誤っているのはどれか。",
+            "options": [
+                "コバルトはビタミン B6 の構成成分である。",
+                "ヨウ素は甲状腺ホルモンの構成成分である。",
+                "血漿中の鉄はトランスフェリンに結合している。",
+                "血漿マグネシウムの 50 % 以上はイオン化している。",
+                "銅はスーパーオキシドジスムターゼ<SOD>の構成成分である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 42,
+            "text": "下垂体後葉ホルモンはどれか。",
+            "options": [
+                "成長ホルモン",
+                "プロラクチン",
+                "バソプレッシン",
+                "甲状腺刺激ホルモン",
+                "副腎皮質刺激ホルモン"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 43,
+            "text": "ビタミンの基本的性質について正しいのはどれか。",
+            "options": [
+                "ビタミン A は水溶性ビタミンである。",
+                "ビタミン B6 は AST の補酵素として働く。",
+                "ビタミン K は抗トロンビン作用を有する。",
+                "β カロチンはビタミン E の前駆物質である。",
+                "ビタミン B12 は胃の壁細胞から吸収される。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 44,
+            "text": "染色体異常による疾患はどれか。**2つ選べ。**",
+            "options": [
+                "鎌状赤血球症",
+                "Bartter 症候群",
+                "Turner 症候群",
+                "Klinefelter 症候群",
+                "フェニルケトン尿症"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 45,
+            "text": "円柱上皮で被覆されているのはどれか。**2つ選べ。**",
+            "options": [
+                "舌",
+                "大   腸",
+                "胆   管",
+                "腎   盂",
+                "膣"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 46,
+            "text": "横紋筋がみられるのはどれか。",
+            "options": [
+                "横隔膜",
+                "十二指腸",
+                "胆 囊",
+                "子 宮",
+                "血 管"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 47,
+            "text": "特異性炎**でない**のはどれか。",
+            "options": [
+                "Hansen 病",
+                "アメーバ赤痢",
+                "結   核",
+                "サルコイドーシス",
+                "梅   毒"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 48,
+            "text": "悪性腫瘍と転移好発部位の組合せで**誤っている**のはどれか。",
+            "options": [
+                "肺   癌 --- 脳",
+                "胃   癌 --- 脾   臓",
+                "腎   癌 --- 肺",
+                "大腸癌 --- 肝   臓",
+                "前立腺癌 --- 骨"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 49,
+            "text": "上皮性腫瘍はどれか。**2つ選べ。**",
+            "options": [
+                "腺   腫",
+                "脂肪腫",
+                "線維腫",
+                "乳頭腫",
+                "平滑筋腫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 50,
+            "text": "H-E 染色標本(別冊No. 8)を別に示す。 この臓器はどれか。",
+            "options": [
+                "甲状腺",
+                "肝   臓",
+                "膵   臓",
+                "副   腎",
+                "精   巣"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-007.png"
+        },
+        {
+            "id": 51,
+            "text": "パラフィン包埋法で正しいのはどれか。",
+            "options": [
+                "脱水時間は短い方がよい。",
+                "硬パラフィンの融点は 50 ℃以下である。",
+                "パラフィン浸透前には脱アルコール操作が必要である。",
+                "固定不十分な組織はパラフィン包埋で追加固定される。",
+                "アルコール脱水法では水洗後に組織を直接、無水アルコールに浸漬する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 52,
+            "text": "術中迅速診断用の凍結切片標本について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "凍結前にホルマリン固定する。",
+                "ドライアイス・アセトンは凍結に適している。",
+                "薄切前に脱水操作を行う。",
+                "薄切温度は安20 ℃前後が適している。",
+                "May-Giemsa 染色が適している。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 53,
+            "text": "内分泌細胞の染色法はどれか。**2つ選べ。**",
+            "options": [
+                "Berlin blue 染色",
+                "Grimelius 染色",
+                "Kossa 反応",
+                "Masson-Fontana 染色",
+                "Victoria blue 染色"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 54,
+            "text": "真菌の染色法はどれか。**2つ選べ。**",
+            "options": [
+                "Grocott 染色",
+                "orcein 染色",
+                "PAS 染色",
+                "Warthin-Starry 染色",
+                "Ziehl-Neelsen 染色"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 55,
+            "text": "**次の文により55、56の問いに答えよ。** 乳癌組織の免疫組織化学染色標本(別冊No. 9) を別に示す。 使用された抗体はどれか。",
+            "options": [
+                "抗 Ki 67 抗体",
+                "抗 HER2/neu 抗体",
+                "抗 p 53 抗体",
+                "抗エストロゲンレセプター<ER>抗体",
+                "抗プロゲステロンレセプター<PgR>抗体"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-008.png"
+        },
+        {
+            "id": 56,
+            "text": "この免疫組織化学染色が判定するのはどれか。",
+            "options": [
+                "組織型",
+                "増殖能",
+                "間質浸潤",
+                "治療薬適応",
+                "リンパ管侵襲"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 57,
+            "text": "子宮頸部細胞診の Papanicolaou 染色標本(別冊No. 10)を別に示す。 考えられるのはどれか。",
+            "options": [
+                "ヘルペス感染細胞",
+                "中等度異形成",
+                "上皮内癌",
+                "扁平上皮癌",
+                "腺   癌"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-009.png"
+        },
+        {
+            "id": 58,
+            "text": "感染症とその一次予防の組合せで正しいのはどれか。",
+            "options": [
+                "AIDS --- 抗 HIV 薬",
+                "Creutzfeldt-Jacob 病 --- ギ     酸",
+                "B 型肝炎 --- γ-グロブリン",
+                "C 型肝炎 --- インターフェロン",
+                "結   核 --- BCG"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 59,
+            "text": "血球産生について正しいのはどれか。",
+            "options": [
+                "胎生期の造血は肝臓で開始される。",
+                "骨髄での血球産生は出生後から始まる。",
+                "形質細胞は骨髄系幹細胞から分化する。",
+                "エリスロポエチンは脾臓で産生される。",
+                "髄外造血では末¦血に幼若な血球が出現する。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 60,
+            "text": "血小板活性化マーカーはどれか。",
+            "options": [
+                "可溶性フィブリン",
+                "β-トロンボグロブリン<β-TG>",
+                "プロトロンビンフラグメント F1+2<PF1+2>",
+                "トロンビン・アンチトロンビン複合体<TAT>",
+                "プラスミン・プラスミンインヒビター複合体<PIC>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 61,
+            "text": "骨髄染色標本(別冊No. 11)を別に示す。 考えられる診断はどれか。",
+            "options": [
+                "急性骨髄性白血病",
+                "急性リンパ性白血病",
+                "慢性骨髄性白血病",
+                "慢性リンパ性白血病",
+                "成人 T 細胞白血病"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-010.png"
+        },
+        {
+            "id": 62,
+            "text": "血球とその形態の特徴の組合せで**誤っている**のはどれか。",
+            "options": [
+                "骨髄芽球 --- 核小体",
+                "前骨髄球 --- 好塩基性斑点",
+                "好中球 --- drumstick<太鼓のばち>",
+                "好塩基球 --- トルイジン青による異染性",
+                "形質細胞 --- 核周明庭"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 63,
+            "text": "造血幹細胞に特徴的な細胞表面抗原はどれか。",
+            "options": [
+                "CD 4",
+                "CD 10",
+                "CD 33",
+                "CD 34",
+                "CD 45"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 64,
+            "text": "血液中のリンパ球が増加するのはどれか。**2つ選べ。**",
+            "options": [
+                "Cushing 症候群",
+                "腎盂腎炎",
+                "心筋梗塞",
+                "伝染性単核症",
+                "百日咳"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 65,
+            "text": "次の文により 65、66 の問いに答えよ。 78 歳の男性。強打した前腕の激しい痛みと急速に増大する皮下血腫を主訴に救急外来を受診した。生来健康であった。血液所見：白血球 9,200/μl、Hb 12.0 g/dl、血小板 29 万/μl、PT 10 秒(正常対照 10 秒)、APTT 81 秒(正常対照 30 秒)。 考えられるのはどれか。",
+            "options": [
+                "血小板無力症",
+                "プロテイン C 欠損症",
+                "異常フィブリノゲン症",
+                "抗リン脂質抗体症候群",
+                "後天性血友病 A<第Ⅷ因子インヒビター>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 66,
+            "text": "この患者に必要な検査はどれか。",
+            "options": [
+                "D ダイマー",
+                "血小板凝集能",
+                "クロスミキシング試験",
+                "抗カルジオリピン抗体",
+                "ループスアンチコアグラント"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 67,
+            "text": "減数分裂を行う細胞はどれか。",
+            "options": [
+                "精母細胞",
+                "前赤芽球",
+                "骨髄芽球",
+                "破骨細胞",
+                "骨髄巨核芽球"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 68,
+            "text": "肺炎患者の喀痰 Gram 染色標本(別冊No. 12)を別に示す。 起因菌と考えられるのはどれか。",
+            "options": [
+                "Haemophilus influenzae",
+                "Moraxella catarrhalis",
+                "Mycoplasma pneumoniae",
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-011.png"
+        },
+        {
+            "id": 69,
+            "text": "下痢便の Gram 染色標本(別冊No. 13)を別に示す。 矢印で示すグラム陰性菌はどれか。",
+            "options": [
+                "Aeromonas hydrophila",
+                "Campylobacter jejuni",
+                "Helicobacter pylori",
+                "Vibrio parahaemolyticus",
+                "Yersinia enterocolitica"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-012.png"
+        },
+        {
+            "id": 70,
+            "text": "光発色性のあるのはどれか。",
+            "options": [
+                "Mycobacterium avium",
+                "Mycobacterium bovis",
+                "Mycobacterium kansasii",
+                "Mycobacterium leprae",
+                "Mycobacterium tuberculosis"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 71,
+            "text": "真菌を Tween 80 加コンミール寒天培地でスライド培養した。顕微鏡写真(別冊No. 14)を別に示す。 考えられるのはどれか。",
+            "options": [
+                "Aspergillus fumigatus",
+                "Candida albicans",
+                "Cryptococcus neoformans",
+                "Trichophyton mentagrophytes",
+                "Trichosporon asahii"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-013.png"
+        },
+        {
+            "id": 72,
+            "text": "原因となるウイルスと疾病の組合せで正しいのはどれか。",
+            "options": [
+                "アデノウイルス --- 乳児嘔吐下痢症",
+                "コクサッキーウイルス --- ヘルパンギーナ",
+                "パルボウイルス --- 突発性発疹",
+                "ヘルペスウイルス --- 伝染性紅斑",
+                "ライノウイルス --- 帯状疱疹"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 73,
+            "text": "HIV の確認検査はどれか。",
+            "options": [
+                "酵素免疫測定法",
+                "イムノクロマト法",
+                "ウイルス分離培養法",
+                "ウエスタンブロット法",
+                "感作ゼラチン粒子凝集法"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 74,
+            "text": "プリオンが感染因子となる疾患はどれか。**2つ選べ。**",
+            "options": [
+                "Creutzfeldt-Jacob 病",
+                "ウシ海綿状脳症",
+                "狂犬病",
+                "日本脳炎",
+                "ラッサ熱"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 75,
+            "text": "髄液とその他の検査材料で感受性判定基準(感性、中間、耐性)が異なるのはどれか。",
+            "options": [
+                "Escherichia coli",
+                "Haemophilus influenzae",
+                "Neisseria meningitidis",
+                "Streptococcus agalactiae",
+                "Streptococcus pneumoniae"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 76,
+            "text": "微生物を含むエアロゾルが発生する操作はどれか。**2つ選べ。**",
+            "options": [
+                "微生物検査用容器の輸送と保存",
+                "検査材料の遠沈",
+                "白金耳の火炎滅菌",
+                "分離培地のコロニー観察",
+                "オートクレーブ終了後の使用済み培地の廃棄"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 77,
+            "text": "血液培養において汚染菌の可能性が高いのはどれか。",
+            "options": [
+                "Citrobacter freundii",
+                "Enterococcus faecalis",
+                "Propionibacterium acnes",
+                "Pseudomonas aeruginosa",
+                "Serratia marcescens"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 78,
+            "text": "PCR 法で**使用しない**のはどれか。",
+            "options": [
+                "制限酵素",
+                "プライマー",
+                "マグネシウムイオン",
+                "耐熱性 DNA ポリメラーゼ",
+                "デオキシリボヌクレオチド三リン酸"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 79,
+            "text": "抗原提示細胞はどれか。**2つ選べ。**",
+            "options": [
+                "B 細胞",
+                "好中球",
+                "樹状細胞",
+                "肥満細胞",
+                "キラー T 細胞"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 80,
+            "text": "J 鎖をもつ免疫グロブリンはどれか。**2つ選べ。**",
+            "options": [
+                "IgA",
+                "IgD",
+                "IgE",
+                "IgG",
+                "IgM"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 81,
+            "text": "散乱光の強度を測定原理とするのはどれか。",
+            "options": [
+                "免疫比濁法",
+                "蛍光抗体法",
+                "免疫比ろう法",
+                "酵素免疫測定法",
+                "化学発光免疫測定法"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 82,
+            "text": "能動免疫はどれか。**2つ選べ。**",
+            "options": [
+                "感染による抗体獲得",
+                "ワクチン接種による抗体獲得",
+                "γ-グロブリン製剤による抗体獲得",
+                "母乳を介した母親から児への抗体の移行",
+                "胎盤を介した母親から胎児への抗体の移行"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 83,
+            "text": "臓器特異的な自己免疫疾患はどれか。",
+            "options": [
+                "SLE",
+                "強皮症",
+                "橋本病",
+                "関節リウマチ",
+                "結節性多発性動脈炎"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 84,
+            "text": "抗セントロメア抗体陽性血清が蛍光抗体法による抗核抗体検査で示す染色パターンはどれか。",
+            "options": [
+                "均一型<homogeneous>",
+                "斑紋型<speckled>",
+                "核小体型<nucleolar>",
+                "細胞質型<cytoplasmic>",
+                "散在斑紋型<discrete speckled>"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 85,
+            "text": "Bence Jones 蛋白について正しいのはどれか。",
+            "options": [
+                "補体結合性を持つ。",
+                "100 ℃加温で白濁する。",
+                "抗 Fc 抗体と反応する。",
+                "単クローン性の遊離 L 鎖である。",
+                "定常部ドメインは3個からなる。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 86,
+            "text": "免疫電気泳動像(別冊No. 15)を別に示す。 疾患として考えられるのはどれか。",
+            "options": [
+                "H 鎖(μ 鎖)病",
+                "IgA 型多発性骨髄腫",
+                "IgG 型多発性骨髄腫",
+                "原発性マクログロブリン血症",
+                "Bence Jones 蛋白型多発性骨髄腫"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": "/pm59/pm-image-014.png"
+        },
+        {
+            "id": 87,
+            "text": "不規則抗体について正しいのはどれか。",
+            "options": [
+                "生理食塩液法で検査する。",
+                "輸血歴がない人では検出されない。",
+                "IgG クラスの抗体が臨床的に重要である。",
+                "日本人では抗 D 抗体が最も多く検出される。",
+                "日本人では Diego 血液型 a 抗原に対する抗体は検出されない。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 88,
+            "text": "輸血副作用とその予防策または対処法の組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "輸血後肝炎 --- 核酸増幅検査(NAT)",
+                "輸血後 GVHD --- 血球洗浄処理",
+                "非溶血性発熱反応 --- 紫外線照射",
+                "溶血性輸血副作用 --- 不規則抗体検査",
+                "輸血関連急性肺傷害 --- 抗 IgA 抗体検査"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 89,
+            "text": "新生児溶血性疾患の新生児へ赤血球を輸血する際に、実施する**必要がない**検査はどれか。",
+            "options": [
+                "児の血液型",
+                "父親の血液型",
+                "母親の血液型",
+                "父親の不規則抗体",
+                "母親の不規則抗体"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 90,
+            "text": "部位別にみた悪性新生物の年齢調整死亡率を 1960 年と 2010 年で比較した。女性において 2010 年で低下がみられるのはどれか。**2つ選べ。**",
+            "options": [
+                "胃",
+                "気管、気管支および肺",
+                "乳   房",
+                "子   宮",
+                "大   腸"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 91,
+            "text": "化学物質と曝露の生体指標の組合せで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "カドミウム --- 尿中 β2 -ミクログロブリン",
+                "トルエン --- 尿中フェノール",
+                "ニトロベンゼン --- 血中メトヘモグロビン",
+                "マンガン --- 尿中 δ-アミノレブリン酸",
+                "有機塩素系農薬 --- 血清コリンエステラーゼ"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 92,
+            "text": "介護保険について正しいのはどれか。",
+            "options": [
+                "介護保険料は国が定める。",
+                "被保険者は 75 歳以上である。",
+                "ケアプランは本人が作成できる。",
+                "要支援者は介護老人保健施設に入所できる。",
+                "介護老人福祉施設への入所は市町村長の許可が必要である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 93,
+            "text": "臨床検査技師が採血を行うことが**できない**部位はどれか。",
+            "options": [
+                "肘静脈",
+                "大腿静脈",
+                "耳朶の毛細血管",
+                "手背の表在静脈",
+                "足背の表在静脈"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 94,
+            "text": "公衆衛生の事業と、それを規定する法律の組合せで正しいのはどれか。",
+            "options": [
+                "保健所の設置 --- 医療法",
+                "医療計画の策定 --- 地域保健法",
+                "労働者への健康診断の実施 --- 労働基準法",
+                "工場の大気汚染物質の排出規制 --- 環境基本法",
+                "公共の場所での受動喫煙の防止 --- 健康増進法"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 95,
+            "text": "バイポーラトランジスタで正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "電圧制御形である。",
+                "周囲温度の影響を受けない。",
+                "入力抵抗は数 M Ω 以上である。",
+                "電子と正孔のキャリアを利用して動作する。",
+                "エミッタ、ベース、コレクタの3端子をもつ。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        },
+        {
+            "id": 96,
+            "text": "NOR 回路はどれか。",
+            "options": [
+                "/pm59/pm-image-101.png",
+                "/pm59/pm-image-102.png",
+                "/pm59/pm-image-103.png",
+                "/pm59/pm-image-104.png",
+                "/pm59/pm-image-105.png"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 97,
+            "text": "人体の電撃反応(商用交流･1秒間通電)でマクロショック(心室細動)が生じる電流値[mA]の大きさはどれか。",
+            "options": [
+                "0.01",
+                "0.1",
+                "1.0",
+                "10",
+                "100"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 98,
+            "text": "無停電電源装置の略号として正しいのはどれか。",
+            "options": [
+                "CPU",
+                "LCD",
+                "OMR",
+                "PDA",
+                "UPS"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 99,
+            "text": "表形式のデータを保存、変換するためのフォーマットはどれか。",
+            "options": [
+                "AVI",
+                "CSV",
+                "JPEG",
+                "MP3",
+                "TIFF"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": false,
+            "isImageUrl": ""
+        },
+        {
+            "id": 100,
+            "text": " 滅菌について正しいのはどれか。**2つ選べ。**",
+            "options": [
+                "乾熱滅菌は 95〜100 ℃で行う。",
+                "γ 線は包装後の滅菌に有効である。",
+                "濾過滅菌は血清の滅菌には適さない。",
+                "高圧蒸気滅菌は芽胞を有する細菌には無効である。",
+                "過酸化水素プラズマ滅菌はカテーテル製品の滅菌に有効である。"
+            ],
+            "correctAnswers": [
+                1
+            ],
+            "multipleAnswers": true,
+            "isImageUrl": ""
+        }
+    ],
+    5: [],
+    6: [],
+    7: [],
+    8: [],
+    9: [],
+    10: [],
+    11: [],
+    12: [],
 };
 
 
