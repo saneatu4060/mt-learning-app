@@ -158,6 +158,7 @@ const PracticePage = () => {
             {/* 問題表示部 */}
             <section className="flex-grow mb-3 sm:mb-4 md:mb-6 overflow-auto">
                 <QuestionComponent
+                    key={currentQuestion.id}
                     question={currentQuestion}
                     questionIndex={currentQuestionIndex}
                     userAnswer={currentUserAnswer}

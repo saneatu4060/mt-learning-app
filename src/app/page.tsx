@@ -54,7 +54,14 @@ const Home = () => {
 
   return (
     <div className="container mx-auto px-3 py-4 sm:px-4 sm:py-6 md:px-6 md:py-8 lg:py-10">
-      <h2 className="...">お知らせ</h2>
+      <div className="text-center mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-gray-100 dark:via-gray-200 dark:to-gray-100 bg-clip-text text-transparent mb-3">
+          お知らせ
+        </h1>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          MT-Learningの最新アップデートや重要な情報をご確認ください
+        </p>
+      </div>
 
       <Card className="overflow-hidden my-4 sm:my-6 max-w-2xl mx-auto shadow-sm border">
         <CardContent className="p-0">
